@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet, TouchableOpacity, Animated, TouchableWithoutFeedback } from 'react-native'
 import React from 'react'
+import { View, Text, StyleSheet, TouchableOpacity, Animated, TouchableWithoutFeedback } from 'react-native'
 
-const defaultStyles = StyleSheet.create({
+const styles = StyleSheet.create({
     tabBarContainer: {
         flexDirection: "row",
         height: 48,
@@ -32,7 +32,7 @@ const defaultStyles = StyleSheet.create({
     }
 })
 
-const TabBarIcon = ({ scene, navigation, navigationState, position, renderIcon, activeTintColor, inactiveTintColor,styles }) => {
+const TabBarIcon = ({ scene, navigation, navigationState, position, renderIcon, activeTintColor, inactiveTintColor }) => {
     const { route, index } = scene
     const { routes } = navigationState
     const inputRange = [-1, ...routes.map((x, i) => i)];
@@ -74,7 +74,6 @@ class TabBar extends React.PureComponent {
         inactiveBackgroundColor: 'transparent',
         showIcon: true,
         showLabel: true,
-        styles: defaultStyles
     }
     render() {
         const {
@@ -95,7 +94,6 @@ class TabBar extends React.PureComponent {
             loginRequired,
             auth
         } = this.props
-        const { styles } = this.props
         const { routes } = navigation.state
 
         function _renderIcon(scene) {

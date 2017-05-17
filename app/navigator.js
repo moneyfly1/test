@@ -1,11 +1,13 @@
 import { Platform } from 'react-native'
 import { StackNavigator, TabNavigator } from 'react-navigation'
 import TabBar from './component/tabbar'
-import Topic from './module/topic/screen'
+import Topic from './module/topic'
 import Login from './module/auth'
 
 const HomeNavigator = TabNavigator({
-    topic: Topic
+    topic: {
+        screen: Topic
+    }
 }, {
     tabBarComponent: TabBar,
     initialRouteName: 'topic',
@@ -22,8 +24,8 @@ const HomeNavigator = TabNavigator({
     }
 })
 
-const Navigator = StackNavigator({
-    home: {
+const MyNavigator = StackNavigator({
+    home:{
         screen: HomeNavigator
     },
     login:{
@@ -32,7 +34,7 @@ const Navigator = StackNavigator({
 }, {
     initialRouteName: 'home',
     headerMode: 'none',
-    cardStyle: Platform.OS === 'ios' ? 'modal' : 'card'
+    mode: Platform.OS === 'ios' ? 'modal' : 'card'
 })
 
-export default Navigator
+export default MyNavigator
