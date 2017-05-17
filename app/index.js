@@ -2,6 +2,9 @@ import React from 'react'
 import { View } from 'react-native'
 import { injectRequest } from './lib'
 import Navigator from './navigator'
+import {useStrict} from 'mobx'
+
+useStrict(true)
 
 injectRequest()
 

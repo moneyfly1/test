@@ -1,5 +1,5 @@
 import { ListView } from 'react-native'
-import { observable, action, computed } from 'mobx'
+import { observable, action, computed, runInAction } from 'mobx'
 import * as service from './service'
 
 
@@ -17,7 +17,9 @@ class TopicStore {
     @action
     async fetchTopics() {
         let events = await service.events()
-        this.list = events
+        runInAction(() => {
+            this.list = events
+        })
         this.isFetched = true
     }
 
