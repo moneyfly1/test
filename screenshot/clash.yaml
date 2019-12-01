@@ -119,6 +119,17 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: true
+  - name: go
+    type: vmess
+    server: go.alilab.org
+    port: "443"
+    uuid: 1daf6d38-f758-488a-84cc-b9b7c1cee4b8
+    alterId: "64"
+    cipher: chacha20-poly1305
+    network: ws
+    ws-path: /v2x/
+#     ws-headers: { Host: v.cccat.in }
+    tls: true
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
