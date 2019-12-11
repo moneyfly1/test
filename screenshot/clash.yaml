@@ -152,6 +152,17 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: true
+  - name: to
+    type: vmess
+    server: to.alilab.org
+    port: "443"
+    uuid: 228457f5-b43e-4012-bb82-439d630f72ab
+    alterId: "64"
+    cipher: chacha20-poly1305
+    network: ws
+    ws-path: /v2x/
+#     ws-headers: { Host: v.cccat.in }
+    tls: true
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
@@ -161,6 +172,7 @@ Proxy Group:
     - "next"
     - "idea"
     - "go"
+    - "to"
     - "i"
     - "live"
   url: 'http://www.gstatic.com/generate_204'
@@ -197,6 +209,7 @@ Proxy Group:
     - "next"
     - "idea"
     - "go"
+    - "to"
     - "i"
     - "live"
 # 白名单模式 PROXY，黑名单模式 DIRECT
@@ -220,6 +233,7 @@ Proxy Group:
     - "next"
     - "idea"
     - "go"
+    - "to"
     - "i"
     - "live"
 # 大陆流媒体面向港澳台限定服务
@@ -231,6 +245,7 @@ Proxy Group:
     - "next"
     - "idea"
     - "go"
+    - "to"
     - "i"
     - "live"
 # 运营商及声名狼藉网站劫持
