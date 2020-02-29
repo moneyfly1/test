@@ -108,17 +108,6 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: true
-  - name: go
-    type: vmess
-    server: go.alilab.org
-    port: "443"
-    uuid: 1daf6d38-f758-488a-84cc-b9b7c1cee4b8
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
   - name: i
     type: vmess
     server: i.alilab.org
@@ -135,17 +124,6 @@ Proxy:
     server: live.alilab.org
     port: "443"
     uuid: eefdedc5-cd0e-4f8a-9fc1-e20b6e340843
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
-  - name: to
-    type: vmess
-    server: to.alilab.org
-    port: "443"
-    uuid: 228457f5-b43e-4012-bb82-439d630f72ab
     alterId: "64"
     cipher: chacha20-poly1305
     network: ws
@@ -181,8 +159,6 @@ Proxy Group:
   proxies:
     - "next"
     - "idea"
-    - "go"
-    - "to"
     - "i"
     - "live"
     - "play"
@@ -219,8 +195,6 @@ Proxy Group:
     - "UrlTest"
     - "next"
     - "idea"
-    - "go"
-    - "to"
     - "i"
     - "live"
     - "play"
@@ -244,8 +218,6 @@ Proxy Group:
     - "PROXY"
     - "next"
     - "idea"
-    - "go"
-    - "to"
     - "i"
     - "live"
     - "play"
@@ -257,8 +229,6 @@ Proxy Group:
     - "DIRECT"
     - "next"
     - "idea"
-    - "go"
-    - "to"
     - "i"
     - "live"
     - "play"
