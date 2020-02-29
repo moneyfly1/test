@@ -141,6 +141,17 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: true
+  - name: box
+    type: vmess
+    server: box.alilab.org
+    port: "443"
+    uuid: aede12f4-444e-4d31-a358-c5e91d4d360e
+    alterId: "64"
+    cipher: chacha20-poly1305
+    network: ws
+    ws-path: /v2x/
+#     ws-headers: { Host: v.cccat.in }
+    tls: true
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
@@ -151,6 +162,7 @@ Proxy Group:
     - "live"
     - "play"
     - "one"
+    - "box"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 
@@ -186,6 +198,7 @@ Proxy Group:
     - "live"
     - "play"
     - "one"
+    - "box"
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
   type: select
@@ -208,6 +221,7 @@ Proxy Group:
     - "live"
     - "play"
     - "one"
+    - "box"
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
   type: select
@@ -218,6 +232,7 @@ Proxy Group:
     - "live"
     - "play"
     - "one"
+    - "box"
 # 运营商及声名狼藉网站劫持
 - name: "Hijacking"
   type: select
