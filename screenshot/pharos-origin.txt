@@ -1,0 +1,4 @@
+trojan://654321@idea.alilab.org:443#idea
+trojan://654321@go.alilab.org:443#go
+trojan://654321@to.alilab.org:443#to
+trojan://9448new2013@box.alilab.org:443#box
