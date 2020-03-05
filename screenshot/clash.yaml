@@ -141,6 +141,17 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: true
+  - name: ball
+    type: vmess
+    server: ball.alilab.org
+    port: "443"
+    uuid: 7cbacaa1-c79c-4359-92d8-1764087ba3f5
+    alterId: "64"
+    cipher: chacha20-poly1305
+    network: ws
+    ws-path: /v2x/
+#     ws-headers: { Host: v.cccat.in }
+    tls: true
   - name: box
     type: vmess
     server: box.alilab.org
@@ -162,6 +173,7 @@ Proxy Group:
     - "live"
     - "play"
     - "one"
+    - "ball"
     - "box"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -198,6 +210,7 @@ Proxy Group:
     - "live"
     - "play"
     - "one"
+    - "ball"
     - "box"
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
@@ -221,6 +234,7 @@ Proxy Group:
     - "live"
     - "play"
     - "one"
+    - "ball"
     - "box"
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
@@ -232,6 +246,7 @@ Proxy Group:
     - "live"
     - "play"
     - "one"
+    - "ball"
     - "box"
 # 运营商及声名狼藉网站劫持
 - name: "Hijacking"
