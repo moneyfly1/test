@@ -173,7 +173,7 @@ Proxy:
     network: ws
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
-    tls: true
+    tls: false
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
