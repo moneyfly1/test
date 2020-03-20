@@ -166,7 +166,7 @@ Proxy:
   - name: nat
     type: vmess
     server: cen-sz-011.xn--pbtp9x388a0kf.com
-    port: "23380"
+    port: "23388"
     uuid: 14791ad3-0638-4a49-a98e-e261c4df462d
     alterId: "64"
     cipher: chacha20-poly1305
