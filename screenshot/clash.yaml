@@ -163,6 +163,17 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: true
+  - name: nat
+    type: vmess
+    server: cen-sz-011.xn--pbtp9x388a0kf.com
+    port: "23380"
+    uuid: 14791ad3-0638-4a49-a98e-e261c4df462d
+    alterId: "64"
+    cipher: chacha20-poly1305
+    network: ws
+    ws-path: /v2x/
+#     ws-headers: { Host: v.cccat.in }
+    tls: true
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
@@ -175,6 +186,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
+    - "nat"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 
@@ -212,6 +224,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
+    - "nat"
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
   type: select
