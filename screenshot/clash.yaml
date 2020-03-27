@@ -185,6 +185,17 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: false
+  - name: ion
+    type: vmess
+    server: ion.alilab.org
+    port: "443"
+    uuid: cdd65e4b-2ff9-4ae6-b61c-af8138bf08d6
+    alterId: "64"
+    cipher: chacha20-poly1305
+    network: ws
+    ws-path: /v2x/
+#     ws-headers: { Host: v.cccat.in }
+    tls: false
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
@@ -199,6 +210,7 @@ Proxy Group:
     - "box"
     - "hk"
     - "nat"
+    - "ion"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 
@@ -238,6 +250,7 @@ Proxy Group:
     - "box"
     - "hk"
     - "nat"
+    - "ion"
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
   type: select
