@@ -195,7 +195,7 @@ Proxy:
     network: ws
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
-    tls: false
+    tls: true
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
@@ -276,6 +276,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
+    - "ion"
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
   type: select
@@ -289,6 +290,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
+    - "ion"
 # 运营商及声名狼藉网站劫持
 - name: "Hijacking"
   type: select
