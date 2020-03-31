@@ -201,6 +201,8 @@ Proxy Group:
 - name: "UrlTest"
   type: url-test
   proxies:
+    - "go"
+    - "to"
     - "i"
     - "play"
     - "one"
@@ -238,6 +240,8 @@ Proxy Group:
   type: select
   proxies:
     - "UrlTest"
+    - "go"
+    - "to"
     - "i"
     - "play"
     - "one"
@@ -263,6 +267,8 @@ Proxy Group:
   type: select
   proxies:
     - "PROXY"
+    - "go"
+    - "to"
     - "i"
     - "play"
     - "one"
@@ -275,6 +281,8 @@ Proxy Group:
   type: select
   proxies:
     - "DIRECT"
+    - "go"
+    - "to"
     - "i"
     - "play"
     - "one"
