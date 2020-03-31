@@ -219,7 +219,6 @@ Proxy Group:
 #     - "1"
 #     - "2"
 #     - "3"
-#     - "4"
 #   url: 'http://www.gstatic.com/generate_204'
 #   interval: 300
 
