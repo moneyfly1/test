@@ -86,116 +86,105 @@ cfw-latency-timeout: 5000
 
 # 代理节点
 Proxy:
-  - name: next
-    type: vmess
-    server: next.alilab.org
-    port: "443"
-    uuid: 72cc8f7a-75f1-11e9-a133-6b9103c1b931
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
   - name: i
-    type: vmess
+    type: trojan
     server: i.alilab.org
-    port: "443"
-    uuid: 77bde54d-7ace-49ff-a0bb-920c43e7730b
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
-  - name: live
-    type: vmess
-    server: live.alilab.org
-    port: "443"
-    uuid: eefdedc5-cd0e-4f8a-9fc1-e20b6e340843
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
+    port: 443
+    password: 654321
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
   - name: play
-    type: vmess
+    type: trojan
     server: play.alilab.org
-    port: "443"
-    uuid: 6cc213bf-30e7-48fd-a7f8-caf04d24a450
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
+  - name: go
+    type: trojan
+    server: go.alilab.org
+    port: 443
+    password: 654321
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
+  - name: to
+    type: trojan
+    server: to.alilab.org
+    port: 443
+    password: 654321
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
   - name: one
-    type: vmess
+    type: trojan
     server: one.alilab.org
-    port: "443"
-    uuid: d051d97c-4929-4a55-97f9-e4b5590c95c1
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
   - name: let
-    type: vmess
+    type: trojan
     server: let.alilab.org
-    port: "443"
-    uuid: 7cbacaa1-c79c-4359-92d8-1764087ba3f5
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
   - name: box
-    type: vmess
+    type: trojan
     server: box.alilab.org
-    port: "443"
-    uuid: aede12f4-444e-4d31-a358-c5e91d4d360e
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
+    port: 443
+    password: 9448new2013
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
   - name: hk
-    type: vmess
+    type: trojan
     server: hk.alilab.org
-    port: "443"
-    uuid: 43c2b93c-0475-424a-b5b2-2c14962794e4
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
-  - name: nat
-    type: vmess
-    server: cen-sz-011.xn--pbtp9x388a0kf.com
-    port: "23388"
-    uuid: 14791ad3-0638-4a49-a98e-e261c4df462d
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: false
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
   - name: ion
-    type: vmess
+    type: trojan
     server: ion.alilab.org
-    port: "443"
-    uuid: cdd65e4b-2ff9-4ae6-b61c-af8138bf08d6
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
