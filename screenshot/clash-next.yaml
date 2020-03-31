@@ -178,7 +178,7 @@ Proxy:
     type: trojan
     server: ion.alilab.org
     port: 443
-    password: 9448new
+    password: 654321
     # udp: true
     # sni: example.com # aka server name
     # alpn:
