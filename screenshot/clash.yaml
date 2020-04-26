@@ -185,11 +185,11 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: false
-  - name: ion
+  - name: idea
     type: vmess
-    server: ion.alilab.org
+    server: idea.alilab.org
     port: "443"
-    uuid: cdd65e4b-2ff9-4ae6-b61c-af8138bf08d6
+    uuid: dda8a398-37ef-4102-9705-c382b1d8bf6d
     alterId: "64"
     cipher: chacha20-poly1305
     network: ws
@@ -210,7 +210,7 @@ Proxy Group:
     - "box"
     - "hk"
     - "nat"
-    - "ion"
+    - "idea"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 
@@ -250,7 +250,7 @@ Proxy Group:
     - "box"
     - "hk"
     - "nat"
-    - "ion"
+    - "idea"
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
   type: select
@@ -276,7 +276,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
-    - "ion"
+    - "idea"
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
   type: select
@@ -290,7 +290,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
-    - "ion"
+    - "idea"
 # 运营商及声名狼藉网站劫持
 - name: "Hijacking"
   type: select
