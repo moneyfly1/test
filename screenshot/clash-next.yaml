@@ -196,6 +196,17 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
+  - name: node
+    type: trojan
+    server: node.alilab.org
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
