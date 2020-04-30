@@ -184,7 +184,7 @@ Proxy:
     network: ws
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
-    tls: false
+    tls: true
   - name: idea
     type: vmess
     server: idea.alilab.org
