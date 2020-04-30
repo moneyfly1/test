@@ -194,7 +194,7 @@ Proxy:
     cipher: chacha20-poly1305
     network: ws
     ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
+#     ws-headers: { Host: v.cccat.in}
     tls: true
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
