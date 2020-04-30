@@ -174,11 +174,11 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: true
-  - name: nat
+  - name: node
     type: vmess
-    server: cen-sz-011.xn--pbtp9x388a0kf.com
-    port: "23388"
-    uuid: 14791ad3-0638-4a49-a98e-e261c4df462d
+    server: node.alilab.org
+    port: "443"
+    uuid: d895219a-f984-403c-a4ac-ad9faf5a1c22
     alterId: "64"
     cipher: chacha20-poly1305
     network: ws
@@ -209,7 +209,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
-    - "nat"
+    - "node"
     - "idea"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -249,7 +249,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
-    - "nat"
+    - "node"
     - "idea"
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
@@ -276,6 +276,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
+    - "node"
     - "idea"
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
@@ -290,6 +291,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
+    - "node"
     - "idea"
 # 运营商及声名狼藉网站劫持
 - name: "Hijacking"
