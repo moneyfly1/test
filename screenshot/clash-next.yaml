@@ -240,6 +240,17 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
+  - name: yun
+    type: trojan
+    server: yun.alilab.org
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
 Proxy Group:
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
@@ -253,7 +264,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
-    - "nat"
+    - "yun"
     - "idea"
     - "node"
     - "ru"
@@ -296,7 +307,7 @@ Proxy Group:
     - "let"
     - "box"
     - "hk"
-    - "nat"
+    - "yun"
     - "idea"
     - "node"
     - "ru"
@@ -332,6 +343,7 @@ Proxy Group:
     - "ru"
     - "my"
     - "dog"
+    - "yun"
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
   type: select
@@ -350,6 +362,7 @@ Proxy Group:
     - "ru"
     - "my"
     - "dog"
+    - "yun"
 # 运营商及声名狼藉网站劫持
 - name: "Hijacking"
   type: select
