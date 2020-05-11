@@ -163,11 +163,11 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: true
-  - name: hk
+  - name: sg
     type: vmess
-    server: hk.alilab.org
+    server: sg.alilab.org
     port: "443"
-    uuid: 43c2b93c-0475-424a-b5b2-2c14962794e4
+    uuid: dc9347d6-93f2-4b29-b87f-1a5989fe7c4c
     alterId: "64"
     cipher: chacha20-poly1305
     network: ws
@@ -252,7 +252,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
-    - "hk"
+    - "sg"
     - "node"
     - "idea"
     - "ru"
@@ -296,7 +296,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
-    - "hk"
+    - "sg"
     - "node"
     - "idea"
     - "ru"
@@ -327,7 +327,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
-    - "hk"
+    - "sg"
     - "node"
     - "idea"
     - "ru"
@@ -346,7 +346,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
-    - "hk"
+    - "sg"
     - "node"
     - "idea"
     - "ru"
