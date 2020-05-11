@@ -174,9 +174,9 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
-  - name: hk
+  - name: sg
     type: trojan
-    server: hk.alilab.org
+    server: sg.alilab.org
     port: 443
     password: 9448new
     # udp: true
@@ -263,7 +263,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
-    - "hk"
+    - "sg"
     - "yun"
     - "idea"
     - "node"
@@ -306,7 +306,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
-    - "hk"
+    - "sg"
     - "yun"
     - "idea"
     - "node"
@@ -337,7 +337,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
-    - "hk"
+    - "sg"
     - "idea"
     - "node"
     - "ru"
@@ -356,7 +356,7 @@ Proxy Group:
     - "one"
     - "let"
     - "box"
-    - "hk"
+    - "sg"
     - "idea"
     - "node"
     - "ru"
