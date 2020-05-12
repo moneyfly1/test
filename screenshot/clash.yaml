@@ -167,7 +167,7 @@ Proxy:
     type: vmess
     server: sg.alilab.org
     port: "443"
-    uuid: dc9347d6-93f2-4b29-b87f-1a5989fe7c4c
+    uuid: f214ea2b-1623-4774-910a-3d5acecd9f71
     alterId: "64"
     cipher: chacha20-poly1305
     network: ws
