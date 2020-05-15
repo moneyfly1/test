@@ -155,7 +155,6 @@ Proxy Group:
 - name: "UrlTest"
   type: url-test
   proxies:
-    - "next"
     - "i"
     - "let"
     - "idea"
@@ -192,7 +191,6 @@ Proxy Group:
   type: select
   proxies:
     - "UrlTest"
-    - "next"
     - "i"
     - "let"
     - "idea"
