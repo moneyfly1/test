@@ -86,6 +86,28 @@ cfw-latency-timeout: 5000
 
 # 代理节点
 Proxy:
+  - name: go
+    type: vmess
+    server: go.alilab.org
+    port: "443"
+    uuid: c5b16ac2-a916-445f-bcee-efc9d7d3908b
+    alterId: "64"
+    cipher: chacha20-poly1305
+    network: ws
+    ws-path: /v2x/
+#     ws-headers: { Host: v.cccat.in }
+    tls: true
+  - name: to
+    type: vmess
+    server: to.alilab.org
+    port: "443"
+    uuid: 479bed04-096c-4c47-b38f-9cfaa81556d8
+    alterId: "64"
+    cipher: chacha20-poly1305
+    network: ws
+    ws-path: /v2x/
+#     ws-headers: { Host: v.cccat.in }
+    tls: true
   - name: i
     type: vmess
     server: i.alilab.org
@@ -155,6 +177,8 @@ Proxy Group:
 - name: "UrlTest"
   type: url-test
   proxies:
+    - "go"
+    - "to"
     - "i"
     - "let"
     - "idea"
@@ -191,6 +215,8 @@ Proxy Group:
   type: select
   proxies:
     - "UrlTest"
+    - "go"
+    - "to"
     - "i"
     - "let"
     - "idea"
@@ -214,6 +240,8 @@ Proxy Group:
   type: select
   proxies:
     - "PROXY"
+    - "go"
+    - "to"
     - "i"
     - "let"
     - "idea"
@@ -225,6 +253,8 @@ Proxy Group:
   type: select
   proxies:
     - "DIRECT"
+    - "go"
+    - "to"
     - "i"
     - "let"
     - "idea"
