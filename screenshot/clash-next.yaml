@@ -86,17 +86,6 @@ cfw-latency-timeout: 5000
 
 # 代理节点
 Proxy:
-  - name: idea
-    type: trojan
-    server: idea.alilab.org
-    port: 443
-    password: 9448new
-    # udp: true
-    # sni: example.com # aka server name
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
   - name: i
     type: trojan
     server: i.alilab.org
@@ -185,28 +174,6 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
-  - name: nat
-    type: trojan
-    server: nat.alilab.org
-    port: 23348
-    password: 9448new
-    # udp: true
-    # sni: example.com # aka server name
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
-  - name: node
-    type: trojan
-    server: node.alilab.org
-    port: 443
-    password: 9448new
-    # udp: true
-    # sni: example.com # aka server name
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
   - name: ru
     type: trojan
     server: ru.alilab.org
@@ -276,8 +243,6 @@ Proxy Group:
     - "box"
     - "sg"
     - "yun"
-    - "idea"
-    - "node"
     - "ru"
     - "my"
     - "dog"
@@ -320,8 +285,6 @@ Proxy Group:
     - "box"
     - "sg"
     - "yun"
-    - "idea"
-    - "node"
     - "ru"
     - "my"
     - "dog"
@@ -351,8 +314,6 @@ Proxy Group:
     - "let"
     - "box"
     - "sg"
-    - "idea"
-    - "node"
     - "ru"
     - "my"
     - "dog"
@@ -371,8 +332,6 @@ Proxy Group:
     - "let"
     - "box"
     - "sg"
-    - "idea"
-    - "node"
     - "ru"
     - "my"
     - "dog"
