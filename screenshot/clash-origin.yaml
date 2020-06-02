@@ -86,17 +86,6 @@ cfw-latency-timeout: 5000
 
 # 代理节点
 Proxy:
-  - name: next
-    type: vmess
-    server: next.alilab.org
-    port: "443"
-    uuid: 72cc8f7a-75f1-11e9-a133-6b9103c1b931
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
   - name: i
     type: vmess
     server: i.alilab.org
@@ -234,7 +223,6 @@ Proxy Group:
 - name: "UrlTest"
   type: url-test
   proxies:
-    - "next"
     - "i"
     - "live"
     - "play"
@@ -277,7 +265,6 @@ Proxy Group:
   type: select
   proxies:
     - "UrlTest"
-    - "next"
     - "i"
     - "live"
     - "play"
@@ -307,7 +294,6 @@ Proxy Group:
   type: select
   proxies:
     - "PROXY"
-    - "next"
     - "i"
     - "live"
     - "play"
@@ -325,7 +311,6 @@ Proxy Group:
   type: select
   proxies:
     - "DIRECT"
-    - "next"
     - "i"
     - "live"
     - "play"
