@@ -174,28 +174,6 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in }
     tls: true
-  - name: node
-    type: vmess
-    server: node.alilab.org
-    port: "443"
-    uuid: d895219a-f984-403c-a4ac-ad9faf5a1c22
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
-    tls: true
-  - name: idea
-    type: vmess
-    server: idea.alilab.org
-    port: "443"
-    uuid: dda8a398-37ef-4102-9705-c382b1d8bf6d
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in}
-    tls: true
   - name: ru
     type: vmess
     server: ru.alilab.org
@@ -264,8 +242,6 @@ Proxy Group:
     - "let"
     - "box"
     - "sg"
-    - "node"
-    - "idea"
     - "ru"
     - "my"
     - "dog"
@@ -309,8 +285,6 @@ Proxy Group:
     - "let"
     - "box"
     - "sg"
-    - "node"
-    - "idea"
     - "ru"
     - "my"
     - "dog"
@@ -341,8 +315,6 @@ Proxy Group:
     - "let"
     - "box"
     - "sg"
-    - "node"
-    - "idea"
     - "ru"
     - "my"
     - "dog"
@@ -361,8 +333,6 @@ Proxy Group:
     - "let"
     - "box"
     - "sg"
-    - "node"
-    - "idea"
     - "ru"
     - "my"
     - "dog"
