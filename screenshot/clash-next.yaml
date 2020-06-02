@@ -130,6 +130,17 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
+  - name: live
+    type: trojan
+    server: live.alilab.org
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
   - name: one
     type: trojan
     server: one.alilab.org
@@ -238,6 +249,7 @@ Proxy Group:
     - "to"
     - "i"
     - "play"
+    - "live"
     - "one"
     - "let"
     - "box"
@@ -280,6 +292,7 @@ Proxy Group:
     - "to"
     - "i"
     - "play"
+    - "live"
     - "one"
     - "let"
     - "box"
@@ -310,6 +323,7 @@ Proxy Group:
     - "to"
     - "i"
     - "play"
+    - "live"
     - "one"
     - "let"
     - "box"
@@ -328,6 +342,7 @@ Proxy Group:
     - "to"
     - "i"
     - "play"
+    - "live"
     - "one"
     - "let"
     - "box"
