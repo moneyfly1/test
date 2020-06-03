@@ -185,17 +185,6 @@ Proxy:
     ws-path: /v2x/
 #     ws-headers: { Host: v.cccat.in}
     tls: true
-  - name: dog
-    type: vmess
-    server: dog.alilab.org
-    port: "443"
-    uuid: f4d18dc9-fdc7-46d9-bd17-c2f6a897dc37
-    alterId: "64"
-    cipher: chacha20-poly1305
-    network: ws
-    ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in}
-    tls: true
   - name: yun
     type: vmess
     server: yun.alilab.org
@@ -232,7 +221,6 @@ Proxy Group:
     - "sg"
     - "ru"
     - "my"
-    - "dog"
     - "yun"
     - "tw"
   url: 'http://www.gstatic.com/generate_204'
@@ -274,7 +262,6 @@ Proxy Group:
     - "sg"
     - "ru"
     - "my"
-    - "dog"
     - "yun"
     - "tw"
 # 白名单模式 PROXY，黑名单模式 DIRECT
@@ -303,7 +290,6 @@ Proxy Group:
     - "sg"
     - "ru"
     - "my"
-    - "dog"
     - "yun"
     - "tw"
 # 大陆流媒体面向港澳台限定服务
@@ -320,7 +306,6 @@ Proxy Group:
     - "sg"
     - "ru"
     - "my"
-    - "dog"
     - "yun"
     - "tw"
 # 运营商及声名狼藉网站劫持
