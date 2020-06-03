@@ -106,7 +106,6 @@ Proxy:
     cipher: chacha20-poly1305
     network: ws
     ws-path: /v2x/
-#     ws-headers: { Host: v.cccat.in }
     tls: true
   - name: play
     type: vmess
