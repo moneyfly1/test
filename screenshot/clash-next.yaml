@@ -207,17 +207,6 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
-  - name: dog
-    type: trojan
-    server: dog.alilab.org
-    port: 443
-    password: 9448new
-    # udp: true
-    # sni: example.com # aka server name
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
   - name: yun
     type: trojan
     server: yun.alilab.org
@@ -257,7 +246,6 @@ Proxy Group:
     - "yun"
     - "ru"
     - "my"
-    - "dog"
     - "tw"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -300,7 +288,6 @@ Proxy Group:
     - "yun"
     - "ru"
     - "my"
-    - "dog"
     - "tw"
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
@@ -330,7 +317,6 @@ Proxy Group:
     - "sg"
     - "ru"
     - "my"
-    - "dog"
     - "yun"
     - "tw"
 # 大陆流媒体面向港澳台限定服务
@@ -349,7 +335,6 @@ Proxy Group:
     - "sg"
     - "ru"
     - "my"
-    - "dog"
     - "yun"
     - "tw"
 # 运营商及声名狼藉网站劫持
