@@ -229,17 +229,6 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
-  - name: sg
-    type: trojan
-    server: sg.alilab.org
-    port: 443
-    password: 9448new
-    # udp: true
-    # sni: example.com # aka server name
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
   - name: hk
     type: trojan
     server: hk.alilab.org
@@ -268,8 +257,6 @@ Proxy Group:
     - "yun"
     - "ru"
     - "my"
-    - "tw"
-    - "sg"
     - "hk"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -313,7 +300,6 @@ Proxy Group:
     - "ru"
     - "my"
     - "tw"
-    - "sg"
     - "hk"
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
@@ -345,7 +331,6 @@ Proxy Group:
     - "my"
     - "yun"
     - "tw"
-    - "sg"
     - "hk"
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
@@ -365,7 +350,6 @@ Proxy Group:
     - "my"
     - "yun"
     - "tw"
-    - "sg"
     - "hk"
 # 运营商及声名狼藉网站劫持
 - name: "Hijacking"
