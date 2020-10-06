@@ -199,7 +199,7 @@ proxies:
     port: 443
     password: 9448new
 # 服务器节点订阅
-proxy-providers:
+# proxy-providers:
   # name: # Provider 名称
   #   type: http # http 或 file
   #   path: # 文件路径
@@ -242,13 +242,13 @@ proxy-groups:
 #
   
   # Fallback 比较实用的策略组类型，用于测试服务器节点的可用性，当第一个节点不可用时切换到第二个，以此类推。
-  - name: "Fallback"
-    type: fallback
-    proxies:
-      - 测试V2RAY
-      - Trojan测试
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+# - name: "Fallback"
+#   type: fallback
+#   proxies:
+#     - 测试V2RAY
+#     - Trojan测试
+#   url: 'http://www.gstatic.com/generate_204'
+#   interval: 300
   
   # 代理节点选择
   - name: "PROXY"
@@ -320,7 +320,6 @@ rule-providers:
 #   path: # 文件路径
 #   url: # 只有当类型为 HTTP 时才可用，您不需要在本地空间中创建新文件。
 #   interval: # 自动更新间隔，仅在类型为 HTTP 时可用
-  
   Unbreak:
     type: http
     behavior: classical
