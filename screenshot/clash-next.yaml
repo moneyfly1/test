@@ -163,17 +163,6 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
-  - name: box
-    type: trojan
-    server: box.alilab.org
-    port: 443
-    password: 9448new2013
-    # udp: true
-    # sni: example.com # aka server name
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
   - name: pr
     type: trojan
     server: pr.alilab.org
@@ -252,7 +241,6 @@ Proxy Group:
     - "live"
     - "one"
     - "let"
-    - "box"
     - "pr"
     - "yun"
     - "ru"
@@ -294,7 +282,6 @@ Proxy Group:
     - "live"
     - "one"
     - "let"
-    - "box"
     - "pr"
     - "yun"
     - "ru"
@@ -325,7 +312,6 @@ Proxy Group:
     - "live"
     - "one"
     - "let"
-    - "box"
     - "pr"
     - "ru"
     - "my"
@@ -344,7 +330,6 @@ Proxy Group:
     - "live"
     - "one"
     - "let"
-    - "box"
     - "pr"
     - "ru"
     - "my"
