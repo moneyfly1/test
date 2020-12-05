@@ -97,9 +97,9 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
-  - name: play
+  - name: sj768
     type: trojan
-    server: play.alilab.org
+    server: sj768.252798.xyz
     port: 443
     password: 9448new
     # udp: true
@@ -214,7 +214,7 @@ Proxy Group:
   proxies:
     - "to"
     - "i"
-    - "play"
+    - "sj768"
     - "live"
     - "one"
     - "let"
@@ -254,7 +254,7 @@ Proxy Group:
     - "UrlTest"
     - "to"
     - "i"
-    - "play"
+    - "sj768"
     - "live"
     - "one"
     - "let"
@@ -282,7 +282,7 @@ Proxy Group:
     - "PROXY"
     - "to"
     - "i"
-    - "play"
+    - "sj768"
     - "live"
     - "one"
     - "let"
@@ -298,7 +298,7 @@ Proxy Group:
     - "DIRECT"
     - "to"
     - "i"
-    - "play"
+    - "sj768"
     - "live"
     - "one"
     - "let"
