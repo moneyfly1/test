@@ -108,17 +108,6 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
-  - name: go
-    type: trojan
-    server: go.alilab.org
-    port: 443
-    password: 654321
-    # udp: true
-    # sni: example.com # aka server name
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
   - name: to
     type: trojan
     server: to.alilab.org
@@ -209,7 +198,7 @@ Proxy:
     # skip-cert-verify: true
   - name: hk
     type: trojan
-    server: hk.alilab.org
+    server: 252798.xyz
     port: 443
     password: 9448new
     # udp: true
@@ -223,7 +212,6 @@ Proxy Group:
 - name: "UrlTest"
   type: url-test
   proxies:
-    - "go"
     - "to"
     - "i"
     - "play"
@@ -264,7 +252,6 @@ Proxy Group:
   type: select
   proxies:
     - "UrlTest"
-    - "go"
     - "to"
     - "i"
     - "play"
@@ -293,7 +280,6 @@ Proxy Group:
   type: select
   proxies:
     - "PROXY"
-    - "go"
     - "to"
     - "i"
     - "play"
@@ -310,7 +296,6 @@ Proxy Group:
   type: select
   proxies:
     - "DIRECT"
-    - "go"
     - "to"
     - "i"
     - "play"
