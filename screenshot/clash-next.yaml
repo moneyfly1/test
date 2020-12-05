@@ -198,7 +198,7 @@ Proxy:
     # skip-cert-verify: true
   - name: hk
     type: trojan
-    server: 252798.xyz
+    server: hk.252798.xyz
     port: 443
     password: 9448new
     # udp: true
