@@ -86,11 +86,11 @@ cfw-latency-timeout: 5000
 
 # 代理节点
 Proxy:
-  - name: i
+  - name: la36
     type: trojan
-    server: i.alilab.org
+    server: la36.252798.xyz
     port: 443
-    password: 654321
+    password: 9448new
     # udp: true
     # sni: example.com # aka server name
     # alpn:
@@ -113,17 +113,6 @@ Proxy:
     server: sj818.252798.xyz
     port: 443
     password: 9448new
-    # udp: true
-    # sni: example.com # aka server name
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
-  - name: to
-    type: trojan
-    server: to.alilab.org
-    port: 443
-    password: 654321
     # udp: true
     # sni: example.com # aka server name
     # alpn:
@@ -196,17 +185,6 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
-  - name: yun
-    type: trojan
-    server: yun.alilab.org
-    port: 443
-    password: 9448new
-    # udp: true
-    # sni: example.com # aka server name
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
   - name: hk
     type: trojan
     server: hk.252798.xyz
@@ -223,15 +201,13 @@ Proxy Group:
 - name: "UrlTest"
   type: url-test
   proxies:
-    - "to"
-    - "i"
+    - "la36"
     - "sj768"
     - "sj818"
     - "live"
     - "one"
     - "let"
     - "pr"
-    - "yun"
     - "ru"
     - "my"
     - "hk"
@@ -264,15 +240,13 @@ Proxy Group:
   type: select
   proxies:
     - "UrlTest"
-    - "to"
-    - "i"
+    - "la36"
     - "sj768"
     - "sj818"
     - "live"
     - "one"
     - "let"
     - "pr"
-    - "yun"
     - "ru"
     - "my"
     - "hk"
@@ -293,8 +267,7 @@ Proxy Group:
   type: select
   proxies:
     - "PROXY"
-    - "to"
-    - "i"
+    - "la36"
     - "sj768"
     - "sj818"
     - "live"
@@ -303,15 +276,13 @@ Proxy Group:
     - "pr"
     - "ru"
     - "my"
-    - "yun"
     - "hk"
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
   type: select
   proxies:
     - "DIRECT"
-    - "to"
-    - "i"
+    - "la36"
     - "sj768"
     - "sj818"
     - "live"
@@ -320,7 +291,6 @@ Proxy Group:
     - "pr"
     - "ru"
     - "my"
-    - "yun"
     - "hk"
 # 运营商及声名狼藉网站劫持
 - name: "Hijacking"
