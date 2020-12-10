@@ -130,6 +130,17 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
+  - name: jpiij
+    type: trojan
+    server: jp.alilab.org
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
   - name: one
     type: trojan
     server: one.alilab.org
@@ -205,7 +216,7 @@ Proxy Group:
     - "sj768"
     - "sj818"
     - "jpsb"
-    - "one"
+    - "jpiij"
     - "let"
     - "pr"
     - "ru"
@@ -244,7 +255,7 @@ Proxy Group:
     - "sj768"
     - "sj818"
     - "jpsb"
-    - "one"
+    - "jpiij"
     - "let"
     - "pr"
     - "ru"
@@ -271,7 +282,7 @@ Proxy Group:
     - "sj768"
     - "sj818"
     - "jpsb"
-    - "one"
+    - "jpiij"
     - "let"
     - "pr"
     - "ru"
@@ -286,7 +297,7 @@ Proxy Group:
     - "sj768"
     - "sj818"
     - "jpsb"
-    - "one"
+    - "jpiij"
     - "let"
     - "pr"
     - "ru"
