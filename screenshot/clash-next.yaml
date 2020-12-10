@@ -119,9 +119,9 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
-  - name: live
+  - name: jpsb
     type: trojan
-    server: live.alilab.org
+    server: jpsb.252798.xyz
     port: 443
     password: 9448new
     # udp: true
@@ -204,7 +204,7 @@ Proxy Group:
     - "la36"
     - "sj768"
     - "sj818"
-    - "live"
+    - "jpsb"
     - "one"
     - "let"
     - "pr"
@@ -243,7 +243,7 @@ Proxy Group:
     - "la36"
     - "sj768"
     - "sj818"
-    - "live"
+    - "jpsb"
     - "one"
     - "let"
     - "pr"
@@ -270,7 +270,7 @@ Proxy Group:
     - "la36"
     - "sj768"
     - "sj818"
-    - "live"
+    - "jpsb"
     - "one"
     - "let"
     - "pr"
@@ -285,7 +285,7 @@ Proxy Group:
     - "la36"
     - "sj768"
     - "sj818"
-    - "live"
+    - "jpsb"
     - "one"
     - "let"
     - "pr"
