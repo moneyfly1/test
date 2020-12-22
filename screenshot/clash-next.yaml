@@ -97,6 +97,17 @@ Proxy:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
+  - name: la5
+    type: trojan
+    server: la5.252798.xyz
+    port: 443
+    password: 9448new
+    # udp: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
   - name: sj768
     type: trojan
     server: sj768.252798.xyz
@@ -213,6 +224,7 @@ Proxy Group:
   type: url-test
   proxies:
     - "la36"
+    - "la5"
     - "sj768"
     - "sj818"
     - "sj567"
@@ -252,6 +264,7 @@ Proxy Group:
   proxies:
     - "UrlTest"
     - "la36"
+    - "la5"
     - "sj768"
     - "sj818"
     - "sj567"
@@ -279,6 +292,7 @@ Proxy Group:
   proxies:
     - "PROXY"
     - "la36"
+    - "la5"
     - "sj768"
     - "sj818"
     - "sj567"
@@ -294,6 +308,7 @@ Proxy Group:
   proxies:
     - "DIRECT"
     - "la36"
+    - "la5"
     - "sj768"
     - "sj818"
     - "sj567"
