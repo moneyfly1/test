@@ -145,11 +145,6 @@ proxies:
     server: jp.252798.xyz
     port: 443
     password: 9448new
-  - name: tw
-    type: trojan
-    server: tw.alilab.org
-    port: 443
-    password: 9448new
   - name: sj567
     type: trojan
     server: sj567.252798.xyz
@@ -213,7 +208,6 @@ proxy-groups:
     proxies:
       - jp
       - hk
-      - tw
       - sj567
       - sj768
       - sj818
