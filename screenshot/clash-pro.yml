@@ -147,7 +147,7 @@ proxies:
     password: 9448new
   - name: tk
     type: trojan
-    server: jp.252798.xyz
+    server: tk.252798.xyz
     port: 443
     password: 9448new
   - name: sj567
