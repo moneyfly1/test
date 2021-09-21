@@ -150,6 +150,11 @@ proxies:
     server: tk.252798.xyz
     port: 443
     password: 9448new
+  - name: sj0
+    type: trojan
+    server: sj0.252798.xyz
+    port: 443
+    password: 9448new
   - name: sj567
     type: trojan
     server: sj567.252798.xyz
@@ -214,6 +219,7 @@ proxy-groups:
       - jp
       - hk
       - tk
+      - sj0
       - sj567
       - sj768
       - sj818
