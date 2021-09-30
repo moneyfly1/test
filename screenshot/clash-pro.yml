@@ -147,8 +147,8 @@ proxies:
     password: 9448new
   - name: sj567
     type: trojan
-    server: sj567.252798.xyz
-    port: 443
+    server: 1.13.171.19
+    port: 1443
     password: 9448new
   - name: sj768
     type: trojan
