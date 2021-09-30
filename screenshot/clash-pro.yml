@@ -147,10 +147,10 @@ proxies:
     password: 9448new
   - name: sj567
     type: trojan
-    server: 1.13.171.19
-    port: 1443
+    server: sj567.252798.xyz
+    port: 443
     password: 9448new
-    skip-cert-verify: true
+    #skip-cert-verify: true
   - name: sj768
     type: trojan
     server: sj768.252798.xyz
