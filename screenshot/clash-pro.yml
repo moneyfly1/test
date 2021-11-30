@@ -133,7 +133,7 @@ proxies:
     type: trojan
     server: hk.252798.xyz
     port: 443
-    password: 9448new
+    password: livandemma
     # udp: true
     # sni: example.com # aka server name
     # alpn:
@@ -144,12 +144,12 @@ proxies:
     type: trojan
     server: jp.252798.xyz
     port: 443
-    password: 9448new
+    password: livandemma
   - name: sj567
     type: trojan
     server: sj567.252798.xyz
     port: 443
-    password: 9448new
+    password: livandemma
     #skip-cert-verify: true
   - name: sj768
     type: trojan
