@@ -145,25 +145,9 @@ proxies:
     server: jp.252798.xyz
     port: 443
     password: livandemma
-  - name: sj567
-    type: trojan
-    server: sj567.252798.xyz
-    port: 443
-    password: livandemma
-    #skip-cert-verify: true
-  - name: sj768
-    type: trojan
-    server: sj768.252798.xyz
-    port: 443
-    password: 9448new
   - name: sj818
     type: trojan
     server: sj818.252798.xyz
-    port: 443
-    password: 9448new
-  - name: la36
-    type: trojan
-    server: la36.alilab.org
     port: 443
     password: 9448new
   - name: la5
@@ -209,11 +193,8 @@ proxy-groups:
     proxies:
       - jp
       - hk
-      - sj567
-      - sj768
       - sj818
       - la5
-      - la36
 
 rule-providers:
   reject:
