@@ -147,13 +147,13 @@ proxies:
     password: livandemma
   - name: sj818
     type: trojan
-    server: 1.13.171.19
-    port: 3443
+    server: sj818.252798.xyz
+    port: 443
     password: 9448new
   - name: la5
     type: trojan
-    server: 1.13.171.19
-    port: 4443
+    server: la5.252798.xyz
+    port: 443
     password: 9448new
 # 服务器节点订阅
 # proxy-providers:
