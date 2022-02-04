@@ -132,8 +132,22 @@ proxies:
   - name: hk
     type: trojan
     server: hk.252798.xyz
-    port: 443
+    port: 5443
     password: livandemma
+    udp: true
+    network: ws
+    ws-opts:
+      path: /t2x
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
+    # skip-cert-verify: true
+  - name: hka
+    type: trojan
+    server: hka.252798.xyz
+    port: 443
+    password: 9448new
     # udp: true
     # sni: example.com # aka server name
     # alpn:
