@@ -143,6 +143,15 @@ proxies:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
+  - name: la2
+    type: trojan
+    server: la2.252798.xyz
+    port: 443
+    password: 9448new
+    udp: true
+    network: ws
+    ws-opts:
+      path: /t2x
   - name: hka
     type: trojan
     server: hka.252798.xyz
@@ -154,6 +163,11 @@ proxies:
     #   - h2
     #   - http/1.1
     # skip-cert-verify: true
+  - name: kr
+    type: trojan
+    server: kr.252798.xyz
+    port: 443
+    password: 9448new
   - name: jp
     type: trojan
     server: jp.252798.xyz
@@ -207,6 +221,9 @@ proxy-groups:
     proxies:
       - jp
       - hk
+      - hka
+      - la2
+      - kr
       - sj818
       - la5
 
