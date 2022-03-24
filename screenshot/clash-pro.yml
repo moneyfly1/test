@@ -139,7 +139,6 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
-    # sni: example.com # aka server name
     # alpn:
     #   - h2
     #   - http/1.1
