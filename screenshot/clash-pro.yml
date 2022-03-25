@@ -190,6 +190,11 @@ proxies:
     server: sj818.252798.xyz
     port: 443
     password: 9448new
+    udp: true
+    sni: sj818.252798.xyz
+    network: ws
+    ws-opts:
+      path: /t2x
   - name: la5
     type: trojan
     server: la5.252798.xyz
