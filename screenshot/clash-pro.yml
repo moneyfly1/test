@@ -200,6 +200,11 @@ proxies:
     server: la5.252798.xyz
     port: 443
     password: 9448new
+    udp: true
+    sni: la5.252798.xyz
+    network: ws
+    ws-opts:
+      path: /t2x
 # 服务器节点订阅
 # proxy-providers:
   # name: # Provider 名称
