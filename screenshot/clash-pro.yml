@@ -178,7 +178,7 @@ proxies:
   - name: jp
     type: trojan
     server: jp.252798.xyz
-    port: 1443
+    port: 443
     password: 9448new
     udp: true
     sni: jp.252798.xyz
@@ -202,6 +202,16 @@ proxies:
     password: 9448new
     udp: true
     sni: la5.252798.xyz
+    network: ws
+    ws-opts:
+      path: /t2x
+  - name: tk
+    type: trojan
+    server: tk.252798.xyz
+    port: 443
+    password: 9448new
+    udp: true
+    sni: tk.252798.xyz
     network: ws
     ws-opts:
       path: /t2x
@@ -248,6 +258,7 @@ proxy-groups:
       - kr
       - sj818
       - la5
+      - tk
 
 rule-providers:
   reject:
