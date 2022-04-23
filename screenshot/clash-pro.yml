@@ -132,7 +132,7 @@ proxies:
   - name: hk
     type: trojan
     server: hk.252798.xyz
-    port: 2443
+    port: 443
     password: 9448new
     sni: hk.252798.xyz
     udp: true
@@ -207,11 +207,11 @@ proxies:
       path: /t2x
   - name: tk
     type: trojan
-    server: tk.252798.xyz
+    server: jpa.252798.xyz
     port: 443
     password: 9448new
     udp: true
-    sni: tk.252798.xyz
+    sni: jpa.252798.xyz
     network: ws
     ws-opts:
       path: /t2x
