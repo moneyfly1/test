@@ -242,7 +242,7 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - jp
+      - hkb
       - hk
       - hka
       - kr
