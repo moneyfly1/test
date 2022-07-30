@@ -201,6 +201,15 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
+  - name: azure
+    type: trojan
+    server: jp.alichen.top
+    port: 443
+    password: 9448new
+    sni: jp.alichen.top
+    network: ws
+    ws-opts:
+      path: /t2x
 # 服务器节点订阅
 # proxy-providers:
   # name: # Provider 名称
@@ -244,6 +253,7 @@ proxy-groups:
       - la5
       - tk
       - kra
+      - azure
 
 rule-providers:
   reject:
