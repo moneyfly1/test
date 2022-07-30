@@ -129,20 +129,6 @@ dns:
     #   - '+.youtube.com'
   
 proxies:
-  - name: hk
-    type: trojan
-    server: hk.252798.xyz
-    port: 443
-    password: 9448new
-    sni: hk.252798.xyz
-    udp: true
-    network: ws
-    ws-opts:
-      path: /t2x
-    # alpn:
-    #   - h2
-    #   - http/1.1
-    # skip-cert-verify: true
   - name: hka
     type: trojan
     server: hka.252798.xyz
@@ -252,7 +238,6 @@ proxy-groups:
     type: select
     proxies:
       - hkb
-      - hk
       - hka
       - kr
       - sj818
