@@ -192,12 +192,12 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
-  - name: kra
+  - name: la
     type: trojan
-    server: kra.252798.xyz
+    server: la.alichen.top
     port: 443
     password: 9448new
-    sni: kra.252798.xyz
+    sni: la.alichen.top
     network: ws
     ws-opts:
       path: /t2x
