@@ -252,7 +252,7 @@ proxy-groups:
       - sj818
       - la5
       - tk
-      - kra
+      - la
       - azure
 
 rule-providers:
