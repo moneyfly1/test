@@ -201,12 +201,12 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
-  - name: azure
+  - name: hkc
     type: trojan
-    server: jp.alichen.top
+    server: hk.alichen.top
     port: 443
     password: 9448new
-    sni: jp.alichen.top
+    sni: hk.alichen.top
     network: ws
     ws-opts:
       path: /t2x
@@ -253,7 +253,7 @@ proxy-groups:
       - la5
       - tk
       - la
-      - azure
+      - hkc
 
 rule-providers:
   reject:
