@@ -162,6 +162,16 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
+  - name: hkc
+    type: trojan
+    server: hk.alichen.top
+    port: 443
+    password: 9448new
+    udp: true
+    sni: hk.alichen.top
+    network: ws
+    ws-opts:
+      path: /t2x
   - name: sj818
     type: trojan
     server: sj818.252798.xyz
@@ -198,15 +208,6 @@ proxies:
     port: 443
     password: 9448new
     sni: la.alichen.top
-    network: ws
-    ws-opts:
-      path: /t2x
-  - name: hkc
-    type: trojan
-    server: hk.alichen.top
-    port: 443
-    password: 9448new
-    sni: hk.alichen.top
     network: ws
     ws-opts:
       path: /t2x
