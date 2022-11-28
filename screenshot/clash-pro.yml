@@ -172,13 +172,13 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
-  - name: sj818
+  - name: ca
     type: trojan
-    server: sj818.252798.xyz
+    server: ca.alichen.top
     port: 443
     password: 9448new
     udp: true
-    sni: sj818.252798.xyz
+    sni: ca.alichen.top
     network: ws
     ws-opts:
       path: /t2x
@@ -250,7 +250,7 @@ proxy-groups:
       - hkb
       - hka
       - kr
-      - sj818
+      - ca
       - la5
       - tk
       - la
