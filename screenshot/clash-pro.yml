@@ -152,62 +152,32 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
-  - name: hkb
+  - name: sj
     type: trojan
-    server: hkb.252798.xyz
+    server: sj.alichen.top
     port: 443
     password: 9448new
     udp: true
-    sni: hkb.252798.xyz
+    sni: sj.alichen.top
     network: ws
     ws-opts:
       path: /t2x
-  - name: hkc
+  - name: jp
     type: trojan
-    server: hk.alichen.top
+    server: jp.alichen.top
     port: 443
     password: 9448new
     udp: true
-    sni: hk.alichen.top
+    sni: jp.alichen.top
     network: ws
     ws-opts:
       path: /t2x
-  - name: ca
+  - name: la3
     type: trojan
-    server: ca.alichen.top
+    server: la3.alichen.top
     port: 443
     password: 9448new
-    udp: true
-    sni: ca.alichen.top
-    network: ws
-    ws-opts:
-      path: /t2x
-  - name: la5
-    type: trojan
-    server: la5.252798.xyz
-    port: 443
-    password: 9448new
-    udp: true
-    sni: la5.252798.xyz
-    network: ws
-    ws-opts:
-      path: /t2x
-  - name: tk
-    type: trojan
-    server: jpa.252798.xyz
-    port: 443
-    password: 9448new
-    udp: true
-    sni: jpa.252798.xyz
-    network: ws
-    ws-opts:
-      path: /t2x
-  - name: la
-    type: trojan
-    server: la.alichen.top
-    port: 443
-    password: 9448new
-    sni: la.alichen.top
+    sni: la3.alichen.top
     network: ws
     ws-opts:
       path: /t2x
@@ -247,14 +217,11 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - hkb
       - hka
       - kr
-      - ca
-      - la5
-      - tk
-      - la
-      - hkc
+      - sj
+      - la3
+      - jp
 
 rule-providers:
   reject:
