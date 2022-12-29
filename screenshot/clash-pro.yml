@@ -172,6 +172,15 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
+  - name: la
+    type: trojan
+    server: la.alichen.top
+    port: 1443
+    password: 9448new
+    sni: la.alichen.top
+    network: ws
+    ws-opts:
+      path: /t2x
   - name: la3
     type: trojan
     server: la3.alichen.top
@@ -220,6 +229,7 @@ proxy-groups:
       - hka
       - kr
       - sj
+      - la
       - la3
       - jp
 
