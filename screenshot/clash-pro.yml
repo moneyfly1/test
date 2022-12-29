@@ -175,7 +175,7 @@ proxies:
   - name: la
     type: trojan
     server: la.alichen.top
-    port: 1443
+    port: 443
     password: 9448new
     sni: la.alichen.top
     network: ws
