@@ -184,7 +184,7 @@ proxies:
   - name: la2
     type: trojan
     server: la.252798.xyz
-    port: 1443
+    port: 443
     password: 9448new
     sni: la.252798.xyz
     network: ws
