@@ -152,7 +152,7 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
-  - name: sj
+  - name: sj1
     type: trojan
     server: sj.alichen.top
     port: 443
@@ -162,7 +162,7 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
-  - name: jp
+  - name: jp1
     type: trojan
     server: jp.alichen.top
     port: 443
@@ -190,16 +190,24 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
-  - name: sj1
-    type: vless
+  - name: sj
+    type: trojan
     server: sj.252798.xyz
     port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sj.252798.xyz"
+    password: 9448new
+    sni: sj.252798.xyz
+    network: ws
+    ws-opts:
+      path: /t2x
+  - name: jp
+    type: trojan
+    server: jp.252798.xyz
+    port: 443
+    password: 9448new
+    sni: jp.252798.xyz
+    network: ws
+    ws-opts:
+      path: /t2x
 # 服务器节点订阅
 # proxy-providers:
   # name: # Provider 名称
@@ -243,6 +251,7 @@ proxy-groups:
       - la2
       - jp
       - sj1
+      - jp1
 
 rule-providers:
   reject:
