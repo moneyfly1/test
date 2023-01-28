@@ -136,7 +136,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "la.alichen.top"
-      multi-mode: true
+      grpc-multi-mode: true
 
   
 proxy-groups:
