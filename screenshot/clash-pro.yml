@@ -365,6 +365,5 @@ rules:
   - RULE-SET,proxy,PROXY
   - RULE-SET,direct,DIRECT
   - RULE-SET,telegramcidr,PROXY
-  - GEOIP,,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,PROXY
