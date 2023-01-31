@@ -137,13 +137,6 @@ proxies:
     grpc-opts:
       grpc-service-name: "la.alichen.top"
       grpc-multi-mode: true
-  - name: la-n
-    type: http
-    server: la.252798.xyz
-    port: 443
-    tls: true
-    username: alichen
-    password: 9448new
 
   
 proxy-groups:
@@ -161,7 +154,6 @@ proxy-groups:
       - la2
       - la3
       - la5
-      - la-n
 
 rule-providers:
   reject:
