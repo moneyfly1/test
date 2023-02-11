@@ -181,15 +181,6 @@ proxies:
     network: ws
     ws-opts:
       path: /t2x
-  - name: la2
-    type: trojan
-    server: la.252798.xyz
-    port: 443
-    password: 9448new
-    sni: la.252798.xyz
-    network: ws
-    ws-opts:
-      path: /t2x
   - name: sj
     type: trojan
     server: sj.252798.xyz
@@ -248,7 +239,6 @@ proxy-groups:
       - kr
       - sj
       - la
-      - la2
       - jp
       - sj1
       - jp1
