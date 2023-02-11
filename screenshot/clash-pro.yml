@@ -195,6 +195,7 @@ proxies:
     server: jp.252798.xyz
     port: 443
     password: 9448new
+    udp: true
     sni: jp.252798.xyz
     network: ws
     ws-opts:
