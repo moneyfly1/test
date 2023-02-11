@@ -98,36 +98,6 @@ proxies:
       grpc-service-name: "kr.252798.xyz"
   - name: la
     type: vless
-    server: la.252798.xyz
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "la.252798.xyz"
-  - name: la2
-    type: vless
-    server: la2.alichen.top
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "la2.alichen.top"
-  - name: la3
-    type: vless
-    server: la3.alichen.top
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "la3.alichen.top"
-  - name: la5
-    type: vless
     server: la.alichen.top
     port: 443
     skip-cert-verify: true
@@ -151,9 +121,6 @@ proxy-groups:
       - jp
       - jp1
       - la
-      - la2
-      - la3
-      - la5
 
 rule-providers:
   reject:
