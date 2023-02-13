@@ -116,6 +116,15 @@ proxies:
     up: "30 Mbps"
     down: "200 Mbps"
     fast-open: true
+  - name: sj-hyse
+    type: hysteria
+    server: sj.alichen.top
+    port: 5566
+    auth_str: "9448new"
+    protocol: wechat-video
+    up: "30 Mbps"
+    down: "200 Mbps"
+    fast-open: true
   - name: la-tic
     type: tuic
     server: la.alichen.top
@@ -160,6 +169,7 @@ proxy-groups:
       - sj-tic
       - jp-tic
       - la-hyse
+      - sj-hyse
 
 rule-providers:
   reject:
