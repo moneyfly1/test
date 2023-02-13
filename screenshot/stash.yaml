@@ -115,6 +115,7 @@ proxies:
     protocol: wechat-video
     up: "30 Mbps"
     down: "200 Mbps"
+    fast-open: true
   - name: la-tic
     type: tuic
     server: la.alichen.top
