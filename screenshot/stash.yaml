@@ -107,45 +107,29 @@ proxies:
     grpc-opts:
       grpc-service-name: "la.alichen.top"
       grpc-multi-mode: true
-  - name: la-tic
-    type: tuic
-    server: la.alichen.top
-    port: 3443
-    token: 9448new
-    # ip:127.0.0.1 # for overwriting the DNS lookup result of the server address set in option 'server'
-    # heartbeat-interval:10000
-    # alpn:[h3]
-    # disable-sni:true
-    reduce-rtt:true
-    # request-timeout:8000
-    udp-relay-mode:native # Available:"native", "quic". Default:"native"
-    # congestion-controller:bbr # Available:"cubic", "new_reno", "bbr". Default:"cubic"
-    # max-udp-relay-packet-size:1500
-    # fast-open:true
-    # skip-cert-verify:true
-    # max-open-streams:20 # default 100, too many open streams may hurt performance
   - name: la-hyse
     type: hysteria
     server: la.alichen.top
     port: 5666
-    obfs: W5CZvXXm3IzyniuN
-    protocol: udp
+    obfs: "W5CZvXXm3IzyniuN"
+    protocol: wechat-video
     up: "30 Mbps"
-    down: "200 Mbps
-    # alpn:
-    #   - h3
-    # sni:server.com
-    # skip-cert-verify:false
-    # recv_window_conn:12582912 # 将会在未来某个时候删除
-    # recv-window-conn:12582912
-    # recv_window:52428800 # 将会在未来某个时候删除
-    # recv-window:52428800
-    # ca:"./my.ca"
-    # ca_str:"xyz" # 将会在未来某个时候删除
-    # ca-str:"xyz"
-    # disable_mtu_discovery:false
-    # fingerprint:xxxx
-    # fast-open:true # 支持 TCP 快速打开，默认为 false
+    down: "200 Mbps"
+  - name: la-tic
+    type: tuic
+    server: la.alichen.top
+    port: 3443
+    token: "9448new"
+  - name: sj-tic
+    type: tuic
+    server: sj.alichen.top
+    port: 3443
+    token: "9448new"
+  - name: jp-tic
+    type: tuic
+    server: jp.alichen.top
+    port: 3443
+    token: "9448new"
   
 proxy-groups:
    # 代理节点选择
@@ -160,6 +144,8 @@ proxy-groups:
       - jp1
       - la
       - la-tic
+      - sj-tic
+      - jp-tic
       - la-hyse
 
 rule-providers:
