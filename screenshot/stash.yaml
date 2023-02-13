@@ -121,16 +121,28 @@ proxies:
     server: la.alichen.top
     port: 3443
     token: "9448new"
+    fast-open: true
+    udp-relay-mode: native
+    reduce-rtt: true
+    congestion-controller: bbr
   - name: sj-tic
     type: tuic
     server: sj.alichen.top
     port: 3443
     token: "9448new"
+    fast-open: true
+    udp-relay-mode: native
+    reduce-rtt: true
+    congestion-controller: bbr
   - name: jp-tic
     type: tuic
     server: jp.alichen.top
     port: 3443
     token: "9448new"
+    fast-open: true
+    udp-relay-mode: native
+    reduce-rtt: true
+    congestion-controller: bbr
   
 proxy-groups:
    # 代理节点选择
