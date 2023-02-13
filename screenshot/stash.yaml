@@ -111,7 +111,7 @@ proxies:
     type: hysteria
     server: la.alichen.top
     port: 5666
-    obfs: "W5CZvXXm3IzyniuN"
+    auth_str: "9448new"
     protocol: wechat-video
     up: "30 Mbps"
     down: "200 Mbps"
