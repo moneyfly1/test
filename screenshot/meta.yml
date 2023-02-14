@@ -34,10 +34,12 @@ dns:
     - '*.battlenet.com'
     - '*.blzstatic.cn'
     - '*.battle.net'
+    
 proxy-providers:
-  default:
+  mine:
     type: http
     url: https://raw.githubusercontent.com/ali322/OSCN/master/screenshot/proxies.yml
+    path: ./mine.yml
     interval: 3600
     health-check:
       enable: true
@@ -49,7 +51,7 @@ proxy-groups:
   - name: "PROXY"
     type: select
     use: 
-     - default
+     - mine
 
 rule-providers:
   reject:
