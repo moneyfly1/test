@@ -51,7 +51,7 @@ proxy-groups:
   - name: "PROXY"
     type: select
     use: 
-     - meta_proxies
+     - mine
 
 rule-providers:
   reject:
