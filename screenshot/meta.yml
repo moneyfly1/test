@@ -34,7 +34,7 @@ dns:
     - '*.battlenet.com'
     - '*.blzstatic.cn'
     - '*.battle.net'
-    
+  
 proxies:
   - name: sj
     type: vless
@@ -152,24 +152,29 @@ proxies:
     udp-relay-mode: native
     reduce-rtt: true
     congestion-controller: bbr
+  - name: naive
+    type: socks
+    server: localhost
+    port: 1080
   
 proxy-groups:
    # 代理节点选择
   - name: "PROXY"
     type: select
-    proxies: 
-     - sj
-     - jp
-     - sj1
-     - jp1
-     - kr
-     - la
-     - hka
-     - la-hyse
-     - sj-hyse
-     - la-tic
-     - sj-tic
-     - jp-tic
+    proxies:
+      - hka
+      - kr
+      - sj
+      - sj1
+      - jp
+      - jp1
+      - la
+      - la-tic
+      - sj-tic
+      - jp-tic
+      - la-hyse
+      - sj-hyse
+      - naive
 
 rule-providers:
   reject:
