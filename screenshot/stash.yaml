@@ -39,7 +39,7 @@ proxy-providers:
   mine:
     type: http
     url: https://raw.githubusercontent.com/ali322/OSCN/master/screenshot/proxies.yml
-    path: ./stash_proxies.yml
+    path: ./stash_proxy.yml
     interval: 3600
     health-check:
       enable: true
@@ -50,8 +50,8 @@ proxy-groups:
    # 代理节点选择
   - name: "PROXY"
     type: select
-    use:
-      - mine
+    use: 
+     - mine
 
 rule-providers:
   reject:
