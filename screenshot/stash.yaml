@@ -125,24 +125,6 @@ proxies:
     up: "30 Mbps"
     down: "200 Mbps"
     fast-open: true
-  - name: la-tic
-    type: tuic
-    server: la.alichen.top
-    port: 3443
-    token: "9448new"
-    fast-open: true
-    udp-relay-mode: native
-    reduce-rtt: true
-    congestion-controller: bbr
-  - name: sj-tic
-    type: tuic
-    server: sj.alichen.top
-    port: 3443
-    token: "9448new"
-    fast-open: true
-    udp-relay-mode: native
-    reduce-rtt: true
-    congestion-controller: bbr
   - name: jp-tic
     type: tuic
     server: jp.alichen.top
@@ -165,8 +147,6 @@ proxy-groups:
       - jp
       - jp1
       - la
-      - la-tic
-      - sj-tic
       - jp-tic
       - la-hyse
       - sj-hyse
