@@ -1,0 +1,117 @@
+proxies:
+  - name: sj
+    type: vless
+    server: sj.252798.xyz
+    port: 443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sj.252798.xyz"
+  - name: jp
+    type: vless
+    server: jp.252798.xyz
+    port: 443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "jp.252798.xyz"
+  - name: sj1
+    type: vless
+    server: sj.alichen.top
+    port: 443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sj.alichen.top"
+  - name: jp1
+    type: vless
+    server: jp.alichen.top
+    port: 443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "jp.alichen.top"
+  - name: hka
+    type: vless
+    server: hka.252798.xyz
+    port: 443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "hka.252798.xyz"
+  - name: kr
+    type: vless
+    server: kr.252798.xyz
+    port: 443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "kr.252798.xyz"
+  - name: la
+    type: vless
+    server: la.alichen.top
+    port: 443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "la.alichen.top"
+      grpc-multi-mode: true
+  - name: la-hyse
+    type: hysteria
+    server: la.alichen.top
+    port: 5666
+    auth_str: "9448new"
+    protocol: wechat-video
+    up: "30 Mbps"
+    down: "200 Mbps"
+    fast-open: true
+  - name: sj-hyse
+    type: hysteria
+    server: sj.alichen.top
+    port: 5566
+    auth_str: "9448new"
+    protocol: wechat-video
+    up: "30 Mbps"
+    down: "200 Mbps"
+    fast-open: true
+  - name: la-tic
+    type: tuic
+    server: la.alichen.top
+    port: 3443
+    token: "9448new"
+    fast-open: true
+    udp-relay-mode: native
+    reduce-rtt: true
+    congestion-controller: bbr
+  - name: sj-tic
+    type: tuic
+    server: sj.alichen.top
+    port: 3443
+    token: "9448new"
+    fast-open: true
+    udp-relay-mode: native
+    reduce-rtt: true
+    congestion-controller: bbr
+  - name: jp-tic
+    type: tuic
+    server: jp.alichen.top
+    port: 3443
+    token: "9448new"
+    fast-open: true
+    udp-relay-mode: native
+    reduce-rtt: true
+    congestion-controller: bbr
