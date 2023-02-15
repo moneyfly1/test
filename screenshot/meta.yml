@@ -115,7 +115,6 @@ proxies:
     protocol: wechat-video
     up: "30 Mbps"
     down: "200 Mbps"
-    alpn: h3
     fast-open: true
   - name: sj-hyse
     type: hysteria
@@ -125,7 +124,6 @@ proxies:
     protocol: wechat-video
     up: "30 Mbps"
     down: "200 Mbps"
-    alpn: h3
     fast-open: true
   - name: jp-tic
     type: tuic
