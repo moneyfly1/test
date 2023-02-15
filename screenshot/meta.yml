@@ -3,10 +3,6 @@ socks-port: 7891
 allow-lan: false
 bind-address: '*'
 mode: rule
-geox-url:
-  geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
-  geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
-  mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb"
 global-client-fingerprint: chrome
 hosts:
   "starhouse": 100.107.189.33
