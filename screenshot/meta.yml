@@ -4,9 +4,6 @@ allow-lan: false
 bind-address: '*'
 mode: rule
 global-client-fingerprint: chrome
-hosts:
-  "starhouse": 100.107.189.33
-  "concise": 100.82.172.90
 log-level: info
 ipv6: false
 external-controller: 127.0.0.1:9090
