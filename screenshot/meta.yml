@@ -132,7 +132,7 @@ proxies:
     server: jp.alichen.top
     port: 3443
     token: "9448new"
-    alpn: [h3]
+    alpn: h3
     fast-open: true
     udp-relay-mode: native
     reduce-rtt: true
