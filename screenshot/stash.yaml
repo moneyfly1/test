@@ -130,10 +130,8 @@ proxies:
     server: jp.alichen.top
     port: 3443
     token: "9448new"
-    fast-open: true
-    udp-relay-mode: native
-    reduce-rtt: true
-    congestion-controller: bbr
+    alpn:
+      - h3
   
 proxy-groups:
    # 代理节点选择
