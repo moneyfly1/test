@@ -3,7 +3,6 @@ socks-port: 7891
 allow-lan: false
 bind-address: '*'
 mode: rule
-global-client-fingerprint: chrome
 log-level: info
 ipv6: false
 external-controller: 127.0.0.1:9090
