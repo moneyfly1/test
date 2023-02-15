@@ -115,6 +115,8 @@ proxies:
     protocol: wechat-video
     up-speed: 30
     down-speed: 200
+    alpn:
+      - h3
   - name: sj-hyse
     type: hysteria
     server: sj.alichen.top
@@ -123,6 +125,8 @@ proxies:
     protocol: wechat-video
     up-speed: 30
     down-speed: 200
+    alpn:
+      - h3
   - name: jp-tic
     type: tuic
     server: jp.alichen.top
