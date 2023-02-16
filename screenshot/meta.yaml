@@ -141,6 +141,10 @@ proxies:
     udp-relay-mode: native
     reduce-rtt: true
     congestion-controller: bbr
+  - name: naive
+    type: socks5
+    server: 127.0.0.1
+    port: 1080
   
 proxy-groups:
    # 代理节点选择
