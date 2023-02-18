@@ -130,9 +130,9 @@ proxies:
     alpn:
       - h3
     fast-open: true
-  - name: jp-tic
+  - name: sj-tic
     type: tuic
-    server: jp.alichen.top
+    server: sj.alichen.top
     port: 3443
     token: "9448new"
     fast-open: true
@@ -158,7 +158,7 @@ proxy-groups:
       - jp
       - jp1
       - la
-      - jp-tic
+      - sj-tic
       - la-hyse
       - sj-hyse
       - naive
