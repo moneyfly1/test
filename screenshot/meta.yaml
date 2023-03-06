@@ -191,6 +191,8 @@ rules:
   - GEOSITE,microsoft@cn,DIRECT
   - GEOSITE,facebook,PROXY
   - GEOSITE,youtube,PROXY
+  - GEOSITE,gfw,PROXY
+  - GEOSITE,greatfire,PROXY
   - GEOSITE,geolocation-cn,DIRECT
   - GEOSITE,geolocation-!cn,PROXY
   - GEOIP,telegram,PROXY,no-resolve
