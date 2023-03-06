@@ -141,6 +141,16 @@ proxies:
     udp-relay-mode: native
     reduce-rtt: true
     congestion-controller: bbr
+  - name: jp1-vision
+    type: vless
+    server: jp.alichen.top
+    port: 443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
   
 proxy-groups:
    # 代理节点选择
@@ -157,6 +167,7 @@ proxy-groups:
       - sj-tic
       - la-hyse
       - sj-hyse
+      - jp1-vision
 
 rule-providers:
   reject:
