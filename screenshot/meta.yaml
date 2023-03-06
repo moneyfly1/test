@@ -151,9 +151,9 @@ proxies:
     network: tcp
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-  - name: kr-vision
+  - name: jp-vision
     type: vless
-    server: kr.252798.xyz
+    server: jp.252798.xyz
     port: 2443
     skip-cert-verify: true
     uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
@@ -177,7 +177,7 @@ proxy-groups:
       - la-hyse
       - sj-hyse
       - jp1-vision
-      - kr-vision
+      - jp-vision
 
 rule-providers:
   reject:
