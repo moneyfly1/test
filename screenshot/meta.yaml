@@ -165,6 +165,16 @@ proxies:
     network: tcp
     flow: xtls-rprx-vision
     client-fingerprint: chrome
+  - name: kr-vision
+    type: vless
+    server: kr.252798.xyz
+    port: 2443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
   
 proxy-groups:
   - name: "PROXY"
@@ -182,6 +192,7 @@ proxy-groups:
       - sj-hyse
       - jp1-vision
       - jp-vision
+      - kr-vision
 
 rules:
   - GEOSITE,category-ads-all,REJECT
