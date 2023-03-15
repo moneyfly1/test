@@ -194,9 +194,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-    reality-opts:
-      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
-      short-id: "1212"
     client-fingerprint: chrome
 
   
