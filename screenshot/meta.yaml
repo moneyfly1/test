@@ -185,7 +185,6 @@ proxies:
     network: tcp
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-
   
 proxy-groups:
   - name: "PROXY"
