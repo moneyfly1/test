@@ -185,6 +185,20 @@ proxies:
     network: tcp
     flow: xtls-rprx-vision
     client-fingerprint: chrome
+  - name: jp1-reality
+    type: vless
+    server: jp.alichen.top
+    port: 4443
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: jp.alichen.top
+    reality-opts:
+      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
+      short-id: 1212
+    client-fingerprint: chrome
   
 proxy-groups:
   - name: "PROXY"
@@ -204,6 +218,7 @@ proxy-groups:
       - jp-vision
       - kr-vision
       - sj-vision
+      - jp1-reality
 
 rules:
   - GEOSITE,category-ads-all,REJECT
