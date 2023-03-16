@@ -217,7 +217,7 @@ proxies:
     client-fingerprint: chrome
   - name: hka-vision
     type: vless
-    server: hka.alichen.top
+    server: hka.252798.xyz
     port: 443
     skip-cert-verify: true
     uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
