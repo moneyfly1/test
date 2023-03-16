@@ -215,6 +215,20 @@ proxies:
       public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
       short-id: "bb1212"
     client-fingerprint: chrome
+  - name: hka-vision
+    type: vless
+    server: hka.alichen.top
+    port: 2443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    udp: true
+    network: tcp
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
+      short-id: "bb1212"
+    client-fingerprint: chrome
   
 proxy-groups:
   - name: "PROXY"
@@ -235,6 +249,7 @@ proxy-groups:
       - kr-vision
       - sj-vision
       - sj1-vision
+      - hka-vision
 
 rules:
   - GEOSITE,category-ads-all,REJECT
