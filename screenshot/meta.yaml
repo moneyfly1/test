@@ -200,8 +200,8 @@ proxies:
     client-fingerprint: chrome
   - name: hk-vision
     type: vless
-    server: hk.252798.xyz
-    port: 2443
+    server: hk.alichen.top
+    port: 443
     skip-cert-verify: true
     uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
     tls: true
