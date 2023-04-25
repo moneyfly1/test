@@ -104,7 +104,7 @@ proxies:
   - name: hk
     type: vless
     server: hk.252798.xyz
-    port: 443
+    port: 1443
     skip-cert-verify: true
     uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
     tls: true
