@@ -134,17 +134,6 @@ proxies:
     alpn:
       - h3
     fast-open: true
-  - name: hk-hyse
-    type: hysteria
-    server: hk.252798.xyz
-    port: 5666
-    auth_str: "9448new"
-    protocol: wechat-video
-    up: "30 Mbps"
-    down: "200 Mbps"
-    alpn:
-      - h3
-    fast-open: true
   - name: sj-hyse
     type: hysteria
     server: sj.alichen.top
@@ -281,7 +270,6 @@ proxy-groups:
       - sj-tic
       - la-hyse
       - sj-hyse
-      - hk-hyse
       - jp1-vision
       - jp-vision
       - kr-vision
