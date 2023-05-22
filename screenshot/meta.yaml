@@ -237,7 +237,6 @@ proxy-groups:
       - sj1
       - jp
       - jp1
-      - hk
       - la
       - sj-tic
       - la-hyse
@@ -248,7 +247,6 @@ proxy-groups:
       - sj-vision
       - sj1-vision
       - hka-vision
-      - hk-vision
 rule-providers:
   reject:
     type: http
