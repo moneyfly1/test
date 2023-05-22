@@ -101,17 +101,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "kr.252798.xyz"
-  - name: hk
-    type: vless
-    server: hk.252798.xyz
-    port: 1443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "hk.252798.xyz"
-      grpc-multi-mode: true
   - name: la
     type: vless
     server: la.alichen.top
@@ -194,23 +183,6 @@ proxies:
     udp: true
     network: tcp
     flow: xtls-rprx-vision
-    reality-opts:
-      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
-      short-id: "bb1212"
-    client-fingerprint: chrome
-  - name: hk-vision
-    type: vless
-    server: hk.alichen.top
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    udp: true
-    network: tcp
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
-      short-id: "bb1212"
     client-fingerprint: chrome
   - name: sj-vision
     type: vless
