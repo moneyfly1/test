@@ -178,8 +178,11 @@ proxies:
     uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
     tls: true
     udp: true
-    network: tcp
-    flow: xtls-rprx-vision
+    network: grpc
+    flow: 
+    grpc-opts:
+      grpc-service-name: "vision"
+      grpc-multi-mode: true
     reality-opts:
       public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
       short-id: "bb1212"
