@@ -43,9 +43,16 @@
   "outbounds": [
     {
       "type": "trojan",
-	  "tag": "trojan-out",
-	  "password": "9448new",
-	  "detour": "shadowtls-out"
+      "tag": "trojan-out",
+      "password": "9448new",
+      "detour": "shadowtls-out",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "h2mux",
+        "max_connections": 4,
+        "min_streams": 4,
+        "padding": true
+      }
     },
     {
       "type": "shadowtls",
