@@ -216,17 +216,21 @@ proxies:
     client-fingerprint: chrome
   - name: hka-vision
     type: vless
-    server: hka.252798.xyz
-    port: 443
+    server: 43.154.55.240
+    port: 1443
     skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
     tls: true
     udp: true
-    network: tcp
-    flow: xtls-rprx-vision
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
     reality-opts:
-      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
-      short-id: "bb1212"
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
   
 proxy-groups:
