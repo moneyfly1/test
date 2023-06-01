@@ -44,7 +44,7 @@
     {
       "type": "vless",
       "tag": "vless-out",
-      "server": "45.139.193.213",
+      "server": "147.78.247.80",
       "server_port": 3443,
       "uuid": "8ed8efb7-457e-4f8f-a903-713fe04ad1c2",
       "network": "tcp",
