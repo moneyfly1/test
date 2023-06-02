@@ -228,6 +228,8 @@ proxy-providers:
 proxy-groups:
   - name: "PROXY"
     type: select
+    use:
+      - sing_box
     proxies:
       - hka
       - kr
@@ -243,7 +245,6 @@ proxy-groups:
       - kr-vision
       - sj-vision
       - sj1-vision
-      - sing_box
 rule-providers:
   reject:
     type: http
