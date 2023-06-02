@@ -214,22 +214,10 @@ proxies:
       public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
       short-id: "bb1212"
     client-fingerprint: chrome
-  
-proxy-providers:
-  sing_box:
-    type: http
-    path: ./sing_box_proxies.yaml
-    url: https://raw.githubusercontent.com/ali322/OSCN/master/screenshot/sing_box_proxies.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300       
+         
 proxy-groups:
   - name: "PROXY"
     type: select
-    use:
-      - sing_box
     proxies:
       - hka
       - kr
