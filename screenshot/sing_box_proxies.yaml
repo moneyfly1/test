@@ -1,5 +1,5 @@
 proxies:
-  - name: kr-vision
+  - name: kr-grpc-vision
     type: vless
     server: 193.122.124.191
     port: 3443
@@ -17,7 +17,7 @@ proxies:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
       short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
-  - name: jp1-vision
+  - name: jp1-grpc-vision
     type: vless
     server: 147.78.247.80
     port: 3443
@@ -35,7 +35,7 @@ proxies:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
       short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
-  - name: jp-vision
+  - name: jp-grpc-grpc-vision
     type: vless
     server: 195.245.242.126
     port: 3443
@@ -53,7 +53,7 @@ proxies:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
       short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
-  - name: sj-vision
+  - name: sj-grpc-vision
     type: vless
     server: 45.139.193.213
     port: 3443
@@ -71,7 +71,7 @@ proxies:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
       short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
-  - name: hka-vision
+  - name: hka-grpc-vision
     type: vless
     server: 43.154.55.240
     port: 1443
