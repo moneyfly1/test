@@ -226,10 +226,6 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300       
 proxy-groups:
-  - name: "SING-BOX"
-    type: select
-    use:
-      - sing_box
   - name: "PROXY"
     type: select
     proxies:
@@ -247,6 +243,7 @@ proxy-groups:
       - kr-vision
       - sj-vision
       - sj1-vision
+      - sing_box
 rule-providers:
   reject:
     type: http
