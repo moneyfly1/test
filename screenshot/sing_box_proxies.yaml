@@ -1,4 +1,40 @@
 proxies:
+  - name: kr-vision
+    type: vless
+    server: 193.122.124.191
+    port: 3443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: jp1-vision
+    type: vless
+    server: 147.78.247.80
+    port: 3443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
   - name: jp-vision
     type: vless
     server: 195.245.242.126
