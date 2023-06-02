@@ -1,0 +1,25 @@
+proxies:
+  - name: kr-shadowtls
+    type: ss
+    server: 193.122.124.191
+    port: 7443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: sj1-shadowtls
+    type: ss
+    server: 171.22.130.57
+    port: 4443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
