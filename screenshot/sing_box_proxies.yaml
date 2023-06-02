@@ -1,4 +1,58 @@
 proxies:
+  - name: jp-vision
+    type: vless
+    server: 195.245.242.126
+    port: 3443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: sj-vision
+    type: vless
+    server: 45.139.193.213
+    port: 3443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: hka-vision
+    type: vless
+    server: 43.154.55.240
+    port: 1443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
   - name: kr-shadowtls
     type: ss
     server: 193.122.124.191
