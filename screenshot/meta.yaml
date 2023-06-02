@@ -256,8 +256,21 @@ proxies:
         password: rObhdH4a89qzQa8oAgMycQ==
         version: 3
         client-fingerprint: chrome
-        
+proxy-providers:
+  sing_box:
+    type: http
+    path: ./proxies.yaml
+    url: https://cdn.jsdelivr.net/gh/ali322/OSCN@master/screenshot/proxies.yml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300       
 proxy-groups:
+  - name: "SING-BOX"
+    type: select
+    use:
+      - sing_box
   - name: "PROXY"
     type: select
     proxies:
