@@ -113,16 +113,3 @@ proxies:
       password: rObhdH4a89qzQa8oAgMycQ==
       version: 3
       client-fingerprint: chrome
-  - name: sj1-hyse
-    type: hysteria
-    server: 171.22.130.57
-    port: 6443
-    auth_str: "chika"
-    protocol: udp
-    up: "50 Mbps"
-    down: "150 Mbps"
-    recv-window-conn: 26843545
-    recv-window: 67108864
-    alpn:
-      - h3
-    fast-open: true
