@@ -39,16 +39,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "jp.alichen.top"
-  - name: hka
-    type: vless
-    server: hka.252798.xyz
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "hka.252798.xyz"
   - name: kr
     type: vless
     server: kr.252798.xyz
@@ -59,17 +49,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "kr.252798.xyz"
-  - name: la
-    type: vless
-    server: la.alichen.top
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "la.alichen.top"
-      grpc-multi-mode: true
   - name: la-hyse
     type: hysteria
     server: la.alichen.top
@@ -88,30 +67,45 @@ proxies:
     up: "30 Mbps"
     down: "200 Mbps"
     fast-open: true
-  - name: la-tic
-    type: tuic
-    server: la.alichen.top
-    port: 3443
-    token: "9448new"
-    fast-open: true
-    udp-relay-mode: native
-    reduce-rtt: true
-    congestion-controller: bbr
-  - name: sj-tic
-    type: tuic
-    server: sj.alichen.top
-    port: 3443
-    token: "9448new"
-    fast-open: true
-    udp-relay-mode: native
-    reduce-rtt: true
-    congestion-controller: bbr
-  - name: jp-tic
-    type: tuic
-    server: jp.alichen.top
-    port: 3443
-    token: "9448new"
-    fast-open: true
-    udp-relay-mode: native
-    reduce-rtt: true
-    congestion-controller: bbr
+  - name: hka-vision
+    type: vless
+    server: 43.154.55.240
+    port: 1443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: kr-shadowtls
+    type: ss
+    server: 193.122.124.191
+    port: 7443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: sj1-shadowtls
+    type: ss
+    server: 171.22.130.57
+    port: 4443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
