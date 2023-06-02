@@ -214,30 +214,12 @@ proxies:
       public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
       short-id: "bb1212"
     client-fingerprint: chrome
-  - name: hka-vision
-    type: vless
-    server: 43.154.55.240
-    port: 1443
-    skip-cert-verify: true
-    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
-    tls: true
-    udp: true
-    flow: 
-    servername: www.docker.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sing-box"
-      grpc-multi-mode: true
-    reality-opts:
-      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
-      short-id: "5d2e3ed92cf8a73b"
-    client-fingerprint: chrome
   
 proxy-providers:
   sing_box:
     type: http
-    path: ./proxies.yaml
-    url: https://cdn.jsdelivr.net/gh/ali322/OSCN@master/screenshot/proxies.yml
+    path: ./sing_box_proxies.yaml
+    url: https://raw.githubusercontent.com/ali322/OSCN/master/screenshot/sing_box_proxies.yaml
     interval: 3600
     health-check:
       enable: true
@@ -265,7 +247,6 @@ proxy-groups:
       - kr-vision
       - sj-vision
       - sj1-vision
-      - hka-vision
 rule-providers:
   reject:
     type: http
