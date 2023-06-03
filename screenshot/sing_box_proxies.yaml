@@ -113,6 +113,18 @@ proxies:
       password: rObhdH4a89qzQa8oAgMycQ==
       version: 3
       client-fingerprint: chrome
+  - name: hka-shadowtls
+    type: ss
+    server: 43.154.55.240
+    port: 1443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
   - name: sj1-shadowtls
     type: ss
     server: 171.22.130.57
@@ -125,3 +137,14 @@ proxies:
       password: rObhdH4a89qzQa8oAgMycQ==
       version: 3
       client-fingerprint: chrome
+ - name: sj-hyse
+   type: hysteria
+   server: sj.alichen.top
+   port: 6443
+   auth_str: "9448new"
+   protocol: udp
+   up: "30 Mbps"
+   down: "200 Mbps"
+   alpn:
+     - h3
+   fast-open: true
