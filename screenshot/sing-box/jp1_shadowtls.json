@@ -98,7 +98,7 @@
         "outbound": "block"
       }
     ],
-    "final": "trojan-out",
-	"auto_detect_interface": true
+    "final": "ss-out",
+    "auto_detect_interface": true
   }
 }
