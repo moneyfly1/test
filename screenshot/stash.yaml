@@ -127,11 +127,14 @@ proxies:
     down-speed: 200
     alpn:
       - h3
-  - name: jp-tic
+  - name: la-tic
     type: tuic
-    server: jp.alichen.top
-    port: 3443
-    token: "9448new"
+    server: la.alichen.top
+    port: 7443
+    token: ""
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    version: 5
     alpn:
       - h3
   
@@ -147,7 +150,7 @@ proxy-groups:
       - jp
       - jp1
       - la
-      - jp-tic
+      - la-tic
       - la-hyse
       - sj-hyse
 
