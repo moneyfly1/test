@@ -117,7 +117,7 @@ proxies:
     down-speed: 200
     alpn:
       - h3
-  - name: sj-hyse
+  - name: sj1-hyse
     type: hysteria
     server: sj.alichen.top
     port: 5566
@@ -130,6 +130,16 @@ proxies:
   - name: la-tic
     type: tuic
     server: la.alichen.top
+    port: 7443
+    token: ""
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    version: 5
+    alpn:
+      - h3
+  - name: sj1-tic
+    type: tuic
+    server: sj.alichen.top
     port: 7443
     token: ""
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
@@ -151,8 +161,9 @@ proxy-groups:
       - jp1
       - la
       - la-tic
+      - sj1-tic
       - la-hyse
-      - sj-hyse
+      - sj1-hyse
 
 rule-providers:
   reject:
