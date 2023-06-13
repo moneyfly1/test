@@ -5,6 +5,20 @@ bind-address: '*'
 mode: rule
 log-level: info
 ipv6: false
+http:
+  url-rewrite:
+    - ^http://g\.cn https://www.google.com transparent
+    - ^https?://www\.google\.cn https://www.google.com 302
+    - ^https?://ad\.example - reject
+  header-rewrite:
+    - ^http://g\.cn request-add DNT 1
+    - ^http://g\.cn request-del DNT
+    - ^http://g\.cn request-replace DNT 1
+    - ^http://g\.cn request-replace-regex User-Agent Go-http-client curl
+    - ^http://g\.cn response-add DNT 1
+    - ^http://g\.cn response-del DNT
+    - ^http://g\.cn response-replace DNT 1
+    - ^http://g\.cn response-replace-regex User-Agent Go-http-client curl
 dns:
   enable: true
   listen: 0.0.0.0:53
