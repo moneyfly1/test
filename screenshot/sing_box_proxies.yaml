@@ -101,6 +101,18 @@ proxies:
       password: rObhdH4a89qzQa8oAgMycQ==
       version: 3
       client-fingerprint: chrome
+  - name: sj-shadowtls
+    type: ss
+    server: 45.139.193.213
+    port: 3443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
   - name: jp1-shadowtls
     type: ss
     server: 147.78.247.80
