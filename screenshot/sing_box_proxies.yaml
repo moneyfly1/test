@@ -35,7 +35,7 @@ proxies:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
       short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
-  - name: jp-grpc-grpc-vision
+  - name: jp-grpc-vision
     type: vless
     server: 195.245.242.126
     port: 3443
