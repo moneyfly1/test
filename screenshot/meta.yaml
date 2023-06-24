@@ -100,17 +100,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "kr.252798.xyz"
-  - name: la
-    type: vless
-    server: la.alichen.top
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "la.alichen.top"
-      grpc-multi-mode: true
   - name: la-hyse
     type: hysteria
     server: la.alichen.top
@@ -133,17 +122,34 @@ proxies:
     alpn:
       - h3
     fast-open: true
-  - name: sj-tic
+  - name: la-tuic
+    server: la.alichen.top
+    port: 7443
     type: tuic
-    server: sj.alichen.top
-    port: 3443
-    token: "9448new"
-    fast-open: true
-    alpn:
-      - h3
-    udp-relay-mode: native
-    reduce-rtt: true
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
     congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: sj1-tuic
+    server: sj.alichen.top
+    port: 7443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
   - name: jp1-vision
     type: vless
     server: jp.alichen.top
@@ -224,8 +230,8 @@ proxy-groups:
       - sj
       - jp
       - jp1
-      - la
-      - sj-tic
+      - la-tuic
+      - sj1-tuic
       - la-hyse
       - sj-hyse
       - jp1-vision
