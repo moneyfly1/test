@@ -123,7 +123,7 @@ proxies:
       grpc-multi-mode: true
   - name: la-hyse
     type: hysteria
-    server: la.alichen.top
+    server: 198.211.24.188
     port: 5666
     auth-str: "9448new"
     protocol: wechat-video
@@ -133,8 +133,8 @@ proxies:
       - h3
   - name: sj1-hyse
     type: hysteria
-    server: sj.alichen.top
-    port: 5566
+    server: sj1.aliz.work
+    port: 5666
     auth-str: "9448new"
     protocol: wechat-video
     up-speed: 30
