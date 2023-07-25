@@ -162,7 +162,7 @@ proxies:
       version: 3
       client-fingerprint: chrome
   - name: la-tuic
-    server: la.alichen.top
+    server: 198.211.24.188
     port: 7443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
