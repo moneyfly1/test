@@ -195,7 +195,7 @@ proxies:
     port: 6443
     auth_str: "9448new"
     protocol: udp
-    sni: la-trojan.alichen.top
+    sni: la.hyperview.work
     up: "50 Mbps"
     down: "150 Mbps"
     recv-window-conn: 26843545
@@ -209,7 +209,7 @@ proxies:
     port: 6443
     auth_str: "9448new"
     protocol: udp
-    sni: sj1.aliz.work
+    sni: hyperview.work
     up: "50 Mbps"
     down: "150 Mbps"
     recv-window-conn: 26843545
