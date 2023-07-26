@@ -110,17 +110,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "kr.252798.xyz"
-  - name: la
-    type: vless
-    server: la.alichen.top
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "la.alichen.top"
-      grpc-multi-mode: true
   - name: la-hyse
     type: hysteria
     server: 198.211.24.188
@@ -133,7 +122,7 @@ proxies:
       - h3
   - name: sj1-hyse
     type: hysteria
-    server: sj1.aliz.work
+    server: hyperview.work
     port: 5666
     auth-str: "9448new"
     protocol: wechat-video
@@ -143,7 +132,7 @@ proxies:
       - h3
   - name: la-tic
     type: tuic
-    server: la.alichen.top
+    server: la.hyperview.work
     port: 7443
     token: ""
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
@@ -153,7 +142,7 @@ proxies:
       - h3
   - name: sj1-tic
     type: tuic
-    server: sj.alichen.top
+    server: hyperview.work
     port: 7443
     token: ""
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
