@@ -57,7 +57,7 @@
       "type": "shadowtls",
       "tag": "shadowtls-out",
       "server": "43.154.55.240",
-      "server_port": 1443,
+      "server_port": 443,
       "version": 3,
       "password": "rObhdH4a89qzQa8oAgMycQ==",
       "tls": {
