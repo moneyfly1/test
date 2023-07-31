@@ -92,7 +92,7 @@ proxies:
   - name: kr-shadowtls
     type: ss
     server: 193.122.124.191
-    port: 7443
+    port: 3443
     cipher: 2022-blake3-aes-128-gcm
     password: rObhdH4a89qzQa8oAgMycQ==
     smux:
@@ -214,6 +214,20 @@ proxies:
   - name: sj1-tuic
     server: sj1.aliz.work
     port: 7443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: kr-tuic
+    server: kr.252798.xyz
+    port: 6443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
     password: foobar
