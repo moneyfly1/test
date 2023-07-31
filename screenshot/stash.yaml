@@ -113,19 +113,19 @@ proxies:
   - name: la-hyse
     type: hysteria
     server: 198.211.24.188
-    port: 5666
+    port: 6443
     auth-str: "9448new"
-    protocol: wechat-video
+    protocol: udp
     up-speed: 30
     down-speed: 200
     alpn:
       - h3
   - name: sj1-hyse
     type: hysteria
-    server: hyperview.work
-    port: 5666
+    server: 171.22.130.57
+    port: 6443
     auth-str: "9448new"
-    protocol: wechat-video
+    protocol: udp
     up-speed: 30
     down-speed: 200
     alpn:
