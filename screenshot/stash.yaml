@@ -106,6 +106,7 @@ proxies:
     port: 6443
     auth-str: "9448new"
     protocol: udp
+    sni: la.hyperview.work
     up-speed: 30
     down-speed: 200
     alpn:
@@ -116,13 +117,14 @@ proxies:
     port: 6443
     auth-str: "9448new"
     protocol: udp
+    sni: hyperview.work
     up-speed: 30
     down-speed: 200
     alpn:
       - h3
   - name: la-tic
     type: tuic
-    server: la.hyperview.work
+    server: 198.211.24.188
     port: 7443
     token: ""
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
@@ -132,7 +134,7 @@ proxies:
       - h3
   - name: sj1-tic
     type: tuic
-    server: hyperview.work
+    server: 171.22.130.57
     port: 7443
     token: ""
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
