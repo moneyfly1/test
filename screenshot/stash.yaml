@@ -70,16 +70,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "jp.252798.xyz"
-  - name: sj1
-    type: vless
-    server: sj.alichen.top
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sj.alichen.top"
   - name: jp1
     type: vless
     server: jp.alichen.top
