@@ -102,10 +102,10 @@ proxies:
       grpc-service-name: "kr.252798.xyz"
   - name: la-hyse
     type: hysteria
-    server: la.alichen.top
-    port: 5666
+    server: 198.211.24.188
+    port: 6443
     auth_str: "9448new"
-    protocol: wechat-video
+    protocol: udp
     up: "30 Mbps"
     down: "200 Mbps"
     alpn:
@@ -113,10 +113,10 @@ proxies:
     fast-open: true
   - name: sj-hyse
     type: hysteria
-    server: sj.alichen.top
-    port: 5566
+    server: 171.22.130.57
+    port: 6443
     auth_str: "9448new"
-    protocol: wechat-video
+    protocol: udp
     up: "30 Mbps"
     down: "200 Mbps"
     alpn:
