@@ -150,6 +150,16 @@ proxies:
     version: 5
     alpn:
       - h3
+  - name: kr-tic
+    type: tuic
+    server: kr.252798.xyz
+    port: 6443
+    token: ""
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    version: 5
+    alpn:
+      - h3
   
 proxy-groups:
    # 代理节点选择
@@ -164,6 +174,7 @@ proxy-groups:
       - jp1
       - la-tic
       - sj1-tic
+      - kr-tic
       - la-hyse
       - sj1-hyse
 
