@@ -124,7 +124,7 @@ proxies:
       - h3
   - name: la-tic
     type: tuic
-    server: 198.211.24.188
+    server: la.aliz.work
     port: 7443
     token: ""
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
@@ -134,7 +134,7 @@ proxies:
       - h3
   - name: sj1-tic
     type: tuic
-    server: 171.22.130.57
+    server: sj1.aliz.work
     port: 7443
     token: ""
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
