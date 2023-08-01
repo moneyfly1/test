@@ -239,6 +239,20 @@ proxies:
     reduce-rtt: true
     request-timeout: 8000
     fast-open: true
+  - name: jp1-tuic
+    server: jp1.hyperview.work
+    port: 7443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
   - name: la-hyse
     type: hysteria
     server: 198.211.24.188
