@@ -198,7 +198,7 @@ proxies:
       version: 3
       client-fingerprint: chrome
   - name: la-tuic
-    server: 198.211.24.188
+    server: la.aliz.work
     port: 7443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
@@ -240,7 +240,7 @@ proxies:
     request-timeout: 8000
     fast-open: true
   - name: jp1-tuic
-    server: jp1.hyperview.work
+    server: jp1.aliz.work
     port: 7443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
@@ -259,7 +259,7 @@ proxies:
     port: 6443
     auth_str: "9448new"
     protocol: udp
-    sni: la.hyperview.work
+    sni: la.aliz.work
     up: "50 Mbps"
     down: "150 Mbps"
     recv-window-conn: 26843545
@@ -273,7 +273,7 @@ proxies:
     port: 6443
     auth_str: "9448new"
     protocol: udp
-    sni: hyperview.work
+    sni: sj1.aliz.work
     up: "50 Mbps"
     down: "150 Mbps"
     recv-window-conn: 26843545
