@@ -258,6 +258,7 @@ proxies:
     server: 198.211.24.188
     port: 6443
     auth_str: "9448new"
+    obfs: "monkeyking"
     protocol: udp
     sni: la.aliz.work
     up: "50 Mbps"
@@ -272,6 +273,7 @@ proxies:
     server: 171.22.130.57
     port: 6443
     auth_str: "9448new"
+    obfs: "monkeyking"
     protocol: udp
     sni: sj1.aliz.work
     up: "50 Mbps"
