@@ -49,6 +49,7 @@
       "up_mbps": 50,
       "down_mbps": 150,
       "auth_str": "9448new",
+      "obfs": "monkeyking",
       "recv_window_conn": 26843545,
       "recv_window": 67108864,
       "tls": {
