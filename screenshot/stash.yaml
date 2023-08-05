@@ -144,6 +144,16 @@ proxies:
     version: 5
     alpn:
       - h3
+  - name: jp1-tic
+    type: tuic
+    server: jp1.aliz.work
+    port: 7443
+    token: ""
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    version: 5
+    alpn:
+      - h3
   - name: kr-tic
     type: tuic
     server: kr.252798.xyz
@@ -167,6 +177,7 @@ proxy-groups:
       - jp1
       - la-tic
       - sj1-tic
+      - jp1-tic
       - kr-tic
       - la-hyse
       - sj1-hyse
