@@ -203,6 +203,7 @@ proxy-groups:
       - kr-tic
       - la-hyse
       - sj1-hyse
+      - jp2-hyse
 
 rule-providers:
   reject:
