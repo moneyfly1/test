@@ -80,6 +80,16 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "jp1.aliz.work"
+  - name: jp2
+    type: vless
+    server: jp2.aliz.work
+    port: 443
+    skip-cert-verify: true
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "jp2.aliz.work"
   - name: hka
     type: vless
     server: hka.252798.xyz
@@ -197,6 +207,7 @@ proxy-groups:
       - sj
       - jp
       - jp1
+      - jp2
       - la-tic
       - sj1-tic
       - jp1-tic
