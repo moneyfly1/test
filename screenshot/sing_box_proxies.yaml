@@ -320,7 +320,7 @@ proxies:
   - name: la-hyse
     type: hysteria
     server: 198.211.24.188
-    port: 6443
+    port: 6442
     auth_str: "9448new"
     obfs: "monkeyking"
     protocol: udp
@@ -365,7 +365,7 @@ proxies:
   - name: us-hyse
     type: hysteria
     server: 104.36.85.36
-    port: 6443
+    port: 5443
     auth_str: "9448new"
     obfs: "monkeyking"
     protocol: udp
