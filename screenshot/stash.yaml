@@ -220,7 +220,6 @@ proxies:
       - h3
   
 proxy-groups:
-   # 代理节点选择
   - name: "PROXY"
     type: select
     proxies:
