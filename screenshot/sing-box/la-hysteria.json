@@ -45,7 +45,7 @@
       "type": "hysteria",
       "tag": "proxy",
       "server": "198.211.24.188",
-      "server_port": 6443,
+      "server_port": 6442,
       "up_mbps": 50,
       "down_mbps": 150,
       "auth_str": "9448new",
