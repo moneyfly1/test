@@ -146,6 +146,18 @@ proxies:
     down-speed: 200
     alpn:
       - h3
+  - name: us-hyse
+    type: hysteria
+    server: 104.36.85.36
+    port: 6443
+    auth-str: "9448new"
+    obfs: "monkeyking"
+    protocol: udp
+    sni: us-trojan.aliz.work
+    up-speed: 30
+    down-speed: 200
+    alpn:
+      - h3
   - name: la-tic
     type: tuic
     server: la.aliz.work
@@ -196,6 +208,16 @@ proxies:
     version: 5
     alpn:
       - h3
+  - name: us-tic
+    type: tuic
+    server: us.aliz.work
+    port: 6443
+    token: ""
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    version: 5
+    alpn:
+      - h3
   
 proxy-groups:
    # 代理节点选择
@@ -212,9 +234,11 @@ proxy-groups:
       - sj1-tic
       - jp1-tic
       - kr-tic
+      - us-tic
       - la-hyse
       - sj1-hyse
       - jp2-hyse
+      - us-hyse
 
 rule-providers:
   reject:
