@@ -271,7 +271,7 @@ proxies:
       client-fingerprint: chrome
   - name: la-tuic
     server: la.aliz.work
-    port: 7443
+    port: 6443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
     password: foobar
