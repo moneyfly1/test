@@ -371,7 +371,7 @@ proxies:
   - name: sj1-hyse
     type: hysteria
     server: 171.22.130.57
-    port: 6443
+    port: 6445
     auth_str: "9448new"
     obfs: "monkeyking"
     protocol: udp
@@ -386,7 +386,7 @@ proxies:
   - name: jp2-hyse
     type: hysteria
     server: 38.207.136.12
-    port: 5443
+    port: 6445
     auth_str: "9448new"
     obfs: "monkeyking"
     protocol: udp
@@ -401,7 +401,7 @@ proxies:
   - name: us-hyse
     type: hysteria
     server: 104.36.85.36
-    port: 5443
+    port: 6445
     auth_str: "9448new"
     obfs: "monkeyking"
     protocol: udp
