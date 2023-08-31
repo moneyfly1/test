@@ -363,7 +363,7 @@ proxies:
   - name: sj1-hyse
     type: hysteria
     server: 171.22.130.57
-    port: 6445
+    port: 6446
     auth_str: "9448new"
     obfs: "monkeyking"
     protocol: udp
