@@ -58,10 +58,8 @@
         "enabled": true,
         "server_name": "jp1.aliz.work",
         "alpn": ["h3"],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false,
+        "disable_sni": true
       }
     },
     {
