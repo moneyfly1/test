@@ -365,7 +365,7 @@ proxies:
     server: 171.22.130.57
     port: 6446
     auth_str: "9448new"
-    obfs: "monkeyking"
+    obfs: "monkey king is sunwukong"
     protocol: udp
     sni: sj1.aliz.work
     up: "50 Mbps"
@@ -380,7 +380,7 @@ proxies:
     server: 104.36.85.36
     port: 6446
     auth_str: "9448new"
-    obfs: "monkeyking"
+    obfs: "monkey king is sunwukong"
     protocol: udp
     sni: us-trojan.aliz.work
     up: "50 Mbps"
