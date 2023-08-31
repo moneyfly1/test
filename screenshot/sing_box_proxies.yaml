@@ -378,7 +378,7 @@ proxies:
   - name: us-hyse
     type: hysteria
     server: 104.36.85.36
-    port: 6445
+    port: 6446
     auth_str: "9448new"
     obfs: "monkeyking"
     protocol: udp
