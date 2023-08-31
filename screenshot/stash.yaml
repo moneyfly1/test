@@ -125,9 +125,9 @@ proxies:
   - name: sj1-hyse
     type: hysteria
     server: 171.22.130.57
-    port: 6445
+    port: 6446
     auth-str: "9448new"
-    obfs: "monkeyking"
+    obfs: "monkey king is sunwukong"
     protocol: udp
     sni: sj1.aliz.work
     up-speed: 30
@@ -149,9 +149,9 @@ proxies:
   - name: us-hyse
     type: hysteria
     server: 104.36.85.36
-    port: 6445
+    port: 6446
     auth-str: "9448new"
-    obfs: "monkeyking"
+    obfs: "monkey king is sunwukong"
     protocol: udp
     sni: us-trojan.aliz.work
     up-speed: 30
