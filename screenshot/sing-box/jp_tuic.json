@@ -1,0 +1,97 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "https://1.1.1.1/dns-query"
+      },
+      {
+        "tag": "china",
+        "address": "local",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      {
+        "geosite": "cn",
+        "server": "china"
+      }
+    ],
+    "disable_cache": true,
+    "disable_expire": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+	  "tag": "tun-in",
+	  "interface_name": "tun0",
+	  "inet4_address": "172.19.0.1/30",
+	  "inet6_address": "fdfe:dcba:9876::1/128",
+	  "stack": "gvisor",
+	  "mtu": 9000,
+	  "auto_route": true,
+	  "strict_route": false,
+	  "endpoint_independent_nat": false,
+	  "sniff": true,
+	  "sniff_override_destination": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "tuic",
+      "tag": "tuic-out",
+      "server": "jp-trojan.aliz.work",
+      "server_port": 9443,
+      "password": "foobar",
+      "uuid": "37d59edb-6e4f-43ff-a439-ee87f0216de8",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "quic",
+      "udp_over_stream": false,
+      "zero_rtt_handshake": false,
+      "heartbeat": "10s",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp-trojan.aliz.work",
+        "alpn": ["h3"],
+        "insecure": false,
+        "disable_sni": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+        "type": "dns",
+        "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+	    "protocol": "dns",
+	    "outbound": "dns-out"
+	  },
+      {
+        "geosite": "cn",
+        "geoip": "cn",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "category-ads-all",
+        "outbound": "block"
+      }
+    ],
+    "final": "tuic-out",
+	"auto_detect_interface": true
+  }
+}
