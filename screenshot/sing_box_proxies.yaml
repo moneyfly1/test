@@ -317,8 +317,8 @@ proxies:
     reduce-rtt: true
     request-timeout: 8000
     fast-open: true
-  - name: jp2-tuic
-    server: jp2.aliz.work
+  - name: la5-tuic
+    server: sj818.252798.xyz
     port: 7443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
