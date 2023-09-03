@@ -1,0 +1,90 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "https://1.1.1.1/dns-query"
+      },
+      {
+        "tag": "china",
+        "address": "local",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      {
+        "geosite": "cn",
+        "server": "china"
+      }
+    ],
+    "disable_cache": true,
+    "disable_expire": true
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 1088,
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "hy-out",
+      "server": "104.36.85.36",
+      "server_port": 8443,
+      "password": "9448new",
+      "up_mbps": 50,
+      "down_mbps": 300,
+      "obfs": {
+        "type": "salamander",
+        "password": "cry_me_a_r1ver"
+      },
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "us.aliz.work",
+        "alpn": ["h3"],
+        "insecure": false,
+        "disable_sni": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+        "type": "dns",
+        "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+	    "protocol": "dns",
+	    "outbound": "dns-out"
+	  },
+      {
+        "geosite": "cn",
+        "geoip": "cn",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "category-ads-all",
+        "outbound": "block"
+      }
+    ],
+    "final": "hy-out",
+	"auto_detect_interface": true
+  }
+}
