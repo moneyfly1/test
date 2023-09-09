@@ -63,6 +63,14 @@
       }
     },
     {
+      "type": "selector",
+      "tag": "select",
+      "outbounds":[
+        "ss-out"
+      ],
+      "default":"ss-out"
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },
