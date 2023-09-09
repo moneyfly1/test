@@ -90,8 +90,6 @@
         "geosite": "category-ads-all",
         "outbound": "block"
       }
-    ],
-    "final": "ss-out",
-	"auto_detect_interface": true
+    ]
   }
 }
