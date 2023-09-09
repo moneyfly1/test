@@ -28,7 +28,7 @@
     {
       "type": "mixed",
       "tag": "mixed-in",
-      "listen": "::",
+      "listen": "127.0.0.1",
       "listen_port": 1088,
       "sniff": true
     }
@@ -91,7 +91,6 @@
         "geosite": "category-ads-all",
         "outbound": "block"
       }
-    ],
-    "final": "ss-out"
+    ]
   }
 }
