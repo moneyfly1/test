@@ -1,0 +1,93 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "https://1.1.1.1/dns-query"
+      },
+      {
+        "tag": "china",
+        "address": "local",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      {
+        "geosite": "cn",
+        "server": "china"
+      }
+    ],
+    "disable_cache": true,
+    "disable_expire": true
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 1088,
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "vless-out",
+      "server": "195.245.242.12",
+      "server_port": 3443,
+      "uuid": "8ed8efb7-457e-4f8f-a903-713fe04ad1c2",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.docker.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU",
+          "short_id": "5d2e3ed92cf8a73b"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "sing-box"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "geosite": [
+          "cn",
+          "private"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geoip": [
+          "cn",
+          "private"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geosite": "category-ads-all",
+        "outbound": "block"
+      }
+    ]
+  }
+}
