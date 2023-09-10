@@ -43,7 +43,7 @@
       "network": "tcp",
       "tls": {
         "enabled": true,
-        "server_name": "hk-trojan.hyperview.work",
+        "server_name": "hk-trojan.aliz.work",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
