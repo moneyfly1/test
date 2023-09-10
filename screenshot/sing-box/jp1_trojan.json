@@ -51,7 +51,7 @@
       "network": "tcp",
       "tls": {
         "enabled": true,
-        "server_name": "jp1-trojan.alichen.top",
+        "server_name": "jp1-trojan.aliz.work",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
