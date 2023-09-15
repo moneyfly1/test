@@ -49,7 +49,7 @@
       "network": "tcp",
       "tls": {
         "enabled": true,
-        "server_name": "kr.252798.xyz",
+        "server_name": "kr-trojan.aliz.work",
         "alpn": [
           "h3"
         ],
