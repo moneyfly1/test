@@ -38,7 +38,7 @@
       "type": "hysteria2",
       "tag": "hy-out",
       "server": "104.36.85.36",
-      "server_port": 8443,
+      "server_port": 8442,
       "password": "9448new",
       "up_mbps": 50,
       "down_mbps": 300,
