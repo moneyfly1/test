@@ -6,12 +6,12 @@
   "dns": {
     "servers": [
       {
-        "tag": "cloudflare",
-        "address": "https://1.1.1.1/dns-query"
+        "tag": "google",
+        "address": "8.8.8.8"
       },
       {
         "tag": "china",
-        "address": "https://1.12.12.12/dns-query"
+        "address": "119.29.29.29"
       }
     ],
     "rules": [
@@ -20,7 +20,7 @@
         "server": "china"
       }
     ],
-    "final": "cloudflare",
+    "final": "google",
     "fakeip": {
       "enabled": true,
       "inet4_range": "198.18.0.1/16"
