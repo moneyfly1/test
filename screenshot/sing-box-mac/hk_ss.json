@@ -90,6 +90,16 @@
       }
     },
     {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "ss-out",
+        "trojan-out"
+      ],
+      "default": "ss-out",
+      "interrupt_exist_connections": false
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },
