@@ -11,16 +11,8 @@
       },
       {
         "tag": "china",
-        "address": "https://doh.pub/dns-query",
-        "address_resolver": "local",
-        "address_strategy": "prefer_ipv4",
-        "strategy": "ipv4_only"
+        "address": "https://1.12.12.12/dns-query"
       },
-      {
-        "tag": "local",
-        "address": "local",
-        "detour": "direct"
-      }
     ],
     "rules": [
       {
