@@ -181,12 +181,10 @@
         "outbound": "direct"
       },
       {
-	"geosite": "geolocation-!cn",
-	"outbound": "jp"
-      },
-      {
-	"geoip": "!cn",
-	"outbound": "jp"
+        "geoip": [
+          "!cn",
+        ],
+        "outbound": "jp"
       },
       {
         "geosite": "category-ads-all",
