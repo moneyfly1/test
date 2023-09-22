@@ -41,8 +41,8 @@
     {
       "type": "vless",
       "tag": "vless-out",
-      "server": "147.78.247.80",
-      "server_port": 3443,
+      "server": "198.211.24.188",
+      "server_port": 443,
       "uuid": "8ed8efb7-457e-4f8f-a903-713fe04ad1c2",
       "network": "tcp",
       "tls": {
@@ -66,8 +66,8 @@
     {
       "type": "trojan",
       "tag": "trojan-out",
-      "server": "147.78.247.80",
-      "server_port": 3443,
+      "server": "198.211.24.188",
+      "server_port": 443,
       "password": "9448new",
       "network": "tcp",
       "tls": {
@@ -101,8 +101,8 @@
     {
       "type": "shadowtls",
       "tag": "shadowtls-out",
-      "server": "147.78.247.80",
-      "server_port": 3443,
+      "server": "198.211.24.188",
+      "server_port": 443,
       "version": 3,
       "password": "rObhdH4a89qzQa8oAgMycQ==",
       "tls": {
