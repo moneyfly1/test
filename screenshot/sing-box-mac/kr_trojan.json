@@ -11,8 +11,7 @@
       },
       {
         "tag": "china",
-        "address": "local",
-        "detour": "direct"
+        "address": "114.114.114.114"
       }
     ],
     "rules": [
