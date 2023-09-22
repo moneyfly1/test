@@ -161,7 +161,7 @@
         "outbound": "block"
       }
     ],
-    "final": "ss-out",
+    "final": "hk",
     "auto_detect_interface": true
   }
 }
