@@ -181,6 +181,12 @@
         "outbound": "direct"
       },
       {
+        "geoip": [
+          "!cn",
+        ],
+        "outbound": "jp"
+      },
+      {
         "geosite": "category-ads-all",
         "outbound": "block"
       }
