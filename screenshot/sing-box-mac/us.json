@@ -72,7 +72,7 @@
       "network": "tcp",
       "tls": {
         "enabled": true,
-        "server_name": "hk-trojan.aliz.work",
+        "server_name": "us-trojan.aliz.work",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -129,7 +129,7 @@
       "network": "tcp",
       "tls": {
         "enabled": true,
-        "server_name": "jp1.aliz.work",
+        "server_name": "us-trojan.aliz.work",
         "alpn": [
           "h3"
         ],
@@ -152,7 +152,7 @@
       "network": "tcp",
       "tls": {
         "enabled": true,
-        "server_name": "la.aliz.work",
+        "server_name": "us.aliz.work",
         "alpn": [
           "h3"
         ],
