@@ -96,8 +96,7 @@
         "ss-out",
         "trojan-out"
       ],
-      "default": "ss-out",
-      "interrupt_exist_connections": false
+      "default": "ss-out"
     },
     {
       "type": "direct",
