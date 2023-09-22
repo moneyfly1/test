@@ -186,7 +186,7 @@
         "geoip": [
           "!cn",
         ],
-        "outbound": "jp"
+        "outbound": "auto"
       },
       {
         "geosite": "category-ads-all",
