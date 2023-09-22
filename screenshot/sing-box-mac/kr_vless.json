@@ -15,6 +15,11 @@
         "address_resolver": "local",
         "address_strategy": "prefer_ipv4",
         "strategy": "ipv4_only"
+      },
+      {
+        "tag": "local",
+        "address": "local",
+        "detour": "direct"
       }
     ],
     "rules": [
