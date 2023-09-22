@@ -116,7 +116,7 @@
     },
     {
       "type": "selector",
-      "tag": "select",
+      "tag": "hk",
       "outbounds": [
         "ss-out",
         "trojan-out",
