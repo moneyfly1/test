@@ -72,7 +72,7 @@
       "network": "tcp",
       "tls": {
         "enabled": true,
-        "server_name": "hk-trojan.aliz.work",
+        "server_name": "jp1-trojan.aliz.work",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
