@@ -12,8 +12,7 @@
       },
       {
         "tag": "china",
-        "address": "local",
-        "detour": "direct"
+        "address": "https://1.12.12.12/dns-query"
       }
     ],
     "rules": [
@@ -22,6 +21,11 @@
         "server": "china"
       }
     ],
+    "final": "cloudflare",
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.1/16"
+    },
     "disable_cache": true,
     "disable_expire": true
   },
