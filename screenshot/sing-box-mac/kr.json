@@ -139,7 +139,7 @@
     },
     {
       "type": "selector",
-      "tag": "jp",
+      "tag": "kr",
       "outbounds": [
         "ss-out",
         "trojan-out",
