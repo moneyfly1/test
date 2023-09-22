@@ -145,15 +145,17 @@
       }
     },
     {
-      "type": "selector",
-      "tag": "jp",
+      "type": "urltest",
+      "tag": "auto",
       "outbounds": [
         "ss-out",
         "trojan-out",
         "vless-out",
         "tuic-out"
       ],
-      "default": "ss-out"
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m",
+      "tolerance": 50,
     },
     {
       "type": "direct",
