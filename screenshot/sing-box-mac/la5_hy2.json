@@ -41,7 +41,7 @@
     {
       "type": "hysteria2",
       "tag": "hy-out",
-      "server": "47.87.128.163",
+      "server": "141.11.92.27",
       "server_port": 8440,
       "password": "9448new",
       "up_mbps": 50,
