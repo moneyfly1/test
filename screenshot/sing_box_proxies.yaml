@@ -321,20 +321,6 @@ proxies:
     reduce-rtt: true
     request-timeout: 8000
     fast-open: true
-  - name: la5-tuic
-    server: sj818.252798.xyz
-    port: 7443
-    type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
-    alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
-    request-timeout: 8000
-    fast-open: true
   - name: us-tuic
     server: us.aliz.work
     port: 9443
@@ -350,32 +336,44 @@ proxies:
     request-timeout: 8000
     fast-open: true
   - name: la-hyse
-    type: hysteria
+    type: hysteria2
     server: 198.211.24.188
-    port: 6443
-    auth_str: "9448new"
-    obfs: "monkeyking"
-    protocol: udp
-    sni: la.aliz.work
-    up: "50 Mbps"
-    down: "150 Mbps"
-    recv-window-conn: 26843545
-    recv-window: 67108864
-    alpn:
-      - h3
-    fast-open: true
-  - name: us-hyse
-    type: hysteria
-    server: 104.36.85.36
-    port: 6446
-    auth_str: "9448new"
-    obfs: "monkey king is sunwukong"
+    port: 8443
+    password: "9448new"
+    obfs: salamander
+    obfs-password: fuckme
     protocol: udp
     sni: us-trojan.aliz.work
     up: "50 Mbps"
     down: "150 Mbps"
-    recv-window-conn: 26843545
-    recv-window: 67108864
+    alpn:
+      - h3
+    fast-open: true
+  - name: us-hyse
+    type: hysteria2
+    server: 104.36.85.36
+    port: 8442
+    password: "9448new"
+    obfs: salamander
+    obfs-password: fuckme
+    protocol: udp
+    sni: us-trojan.aliz.work
+    up: "50 Mbps"
+    down: "150 Mbps"
+    alpn:
+      - h3
+    fast-open: true
+  - name: la5-hyse
+    type: hysteria2
+    server: 141.11.92.27
+    port: 8440
+    password: "9448new"
+    obfs: salamander
+    obfs-password: fuckme
+    protocol: udp
+    sni: sj818.252798.xyz
+    up: "50 Mbps"
+    down: "150 Mbps"
     alpn:
       - h3
     fast-open: true
