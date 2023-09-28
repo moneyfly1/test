@@ -42,183 +42,93 @@ dns:
 proxies:
   - name: sj
     type: vless
-    server: sj.252798.xyz
-    port: 443
+    server: 45.139.193.213
+    port: 3443
     skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sj.252798.xyz"
-  - name: jp
-    type: vless
-    server: jp.252798.xyz
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "jp.252798.xyz"
-  - name: sj1
-    type: vless
-    server: sj.alichen.top
-    port: 1443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sj.alichen.top"
-  - name: jp1
-    type: vless
-    server: jp.alichen.top
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "jp.alichen.top"
-  - name: hka
-    type: vless
-    server: hka.252798.xyz
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "hka.252798.xyz"
-  - name: kr
-    type: vless
-    server: kr.252798.xyz
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "kr.252798.xyz"
-  - name: la-hyse
-    type: hysteria
-    server: 198.211.24.188
-    port: 6443
-    auth_str: "9448new"
-    protocol: udp
-    up: "30 Mbps"
-    down: "200 Mbps"
-    alpn:
-      - h3
-    fast-open: true
-  - name: sj-hyse
-    type: hysteria
-    server: 171.22.130.57
-    port: 6443
-    auth_str: "9448new"
-    protocol: udp
-    up: "30 Mbps"
-    down: "200 Mbps"
-    alpn:
-      - h3
-    fast-open: true
-  - name: la-tuic
-    server: la.alichen.top
-    port: 7443
-    type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
-    alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
-    request-timeout: 8000
-    fast-open: true
-  - name: sj1-tuic
-    server: sj.alichen.top
-    port: 7443
-    type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
-    alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
-    request-timeout: 8000
-    fast-open: true
-  - name: jp1-vision
-    type: vless
-    server: jp.alichen.top
-    port: 2443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
     tls: true
     udp: true
-    network: tcp
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
-      short-id: "bb1212"
-    client-fingerprint: chrome
-  - name: jp-vision
-    type: vless
-    server: jp.252798.xyz
-    port: 2443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    udp: true
-    network: grpc
     flow: 
+    servername: www.docker.com
+    network: grpc
     grpc-opts:
-      grpc-service-name: "vision"
+      grpc-service-name: "sing-box"
       grpc-multi-mode: true
     reality-opts:
-      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
-      short-id: "bb1212"
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
-  - name: kr-vision
+  - name: jp
     type: vless
-    server: kr.252798.xyz
-    port: 2443
+    server: 195.245.242.126
+    port: 3443
     skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
     tls: true
     udp: true
-    network: tcp
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-  - name: sj-vision
-    type: vless
-    server: sj.252798.xyz
-    port: 2443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    udp: true
-    network: tcp
-    flow: xtls-rprx-vision
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
     reality-opts:
-      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
-      short-id: "bb1212"
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
-  - name: sj1-vision
+  - name: jp1
     type: vless
-    server: sj.alichen.top
-    port: 2443
+    server: 147.78.247.80
+    port: 3443
     skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
     tls: true
     udp: true
-    network: tcp
-    flow: xtls-rprx-vision
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
     reality-opts:
-      public-key: IrFtV1hpCd7EZGxlJKMMrhMe8gjzFgwnrsmu2_tTPDg
-      short-id: "bb1212"
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: hka
+    type: vless
+    server: 43.154.55.240
+    port: 443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: kr
+    type: vless
+    server: 193.122.124.191
+    port: 3443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
          
 proxy-groups:
@@ -230,15 +140,7 @@ proxy-groups:
       - sj
       - jp
       - jp1
-      - la-tuic
-      - sj1-tuic
-      - la-hyse
-      - sj-hyse
-      - jp1-vision
-      - jp-vision
-      - kr-vision
-      - sj-vision
-      - sj1-vision
+      
 rule-providers:
   reject:
     type: http
