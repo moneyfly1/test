@@ -130,6 +130,16 @@ proxies:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
       short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
+  - name: "hka-trojan"
+    type: trojan
+    server: 43.154.55.240
+    port: 443
+    password: 9448new
+    client-fingerprint: chrome
+    sni: hk-trojan.aliz.work
+    alpn:
+      - h2
+      - http/1.1
          
 proxy-groups:
   - name: "PROXY"
@@ -140,6 +150,7 @@ proxy-groups:
       - sj
       - jp
       - jp1
+      - hk-trojan
       
 rule-providers:
   reject:
