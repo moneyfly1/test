@@ -1,0 +1,95 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "8.8.8.8"
+      },
+      {
+        "tag": "china",
+        "address": "119.29.29.29"
+      }
+    ],
+    "rules": [
+      {
+        "geosite": "cn",
+        "server": "china"
+      }
+    ],
+    "final": "google",
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.1/16"
+    },
+    "disable_cache": true,
+    "disable_expire": true
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 1088,
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "hy-out",
+      "server": "147.78.247.80",
+      "server_port": 6443,
+      "password": "9448new",
+      "up_mbps": 50,
+      "down_mbps": 300,
+      "obfs": {
+        "type": "salamander",
+        "password": "fuckme"
+      },
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp1-trojan.aliz.work",
+        "alpn": [
+          "h3"
+        ],
+        "insecure": false,
+        "disable_sni": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "geosite": [
+          "cn",
+          "private"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geoip": [
+          "cn",
+          "private"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geosite": "category-ads-all",
+        "outbound": "block"
+      }
+    ]
+  }
+}
