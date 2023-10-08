@@ -52,12 +52,11 @@ dns:
 proxies:
   - name: sj
     type: vless
-    server: 45.139.193.213
+    server: sj-vless.aliz.work
     port: 3443
     skip-cert-verify: true
     uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
     tls: true
-    servername: www.docker.com
     network: grpc
     grpc-opts:
       grpc-service-name: "sing-box"
