@@ -62,54 +62,76 @@ proxies:
       grpc-service-name: "sing-box"
   - name: jp
     type: vless
-    server: jp.252798.xyz
-    port: 443
+    server: jp-vless.aliz.work
+    port: 3443
     skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
     tls: true
     network: grpc
     grpc-opts:
-      grpc-service-name: "jp.252798.xyz"
+      grpc-service-name: "sing-box"
   - name: jp1
     type: vless
-    server: jp1.aliz.work
-    port: 443
+    server: jp1-vless.aliz.work
+    port: 3443
     skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
     tls: true
     network: grpc
     grpc-opts:
-      grpc-service-name: "jp1.aliz.work"
-  - name: jp2
-    type: vless
-    server: jp2.aliz.work
-    port: 443
-    skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
-    tls: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "jp2.aliz.work"
+      grpc-service-name: "sing-box"
   - name: hka
     type: vless
-    server: hka.252798.xyz
+    server: hka-vless.aliz.work
     port: 1443
     skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
     tls: true
     network: grpc
     grpc-opts:
-      grpc-service-name: "hka.252798.xyz"
+      grpc-service-name: "sing-box"
   - name: kr
     type: vless
-    server: kr.252798.xyz
+    server: kr-vless.aliz.work
     port: 443
     skip-cert-verify: true
-    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
     tls: true
     network: grpc
     grpc-opts:
-      grpc-service-name: "kr.252798.xyz"
+      grpc-service-name: "sing-box"
+  - name: sj-trojan
+    type: trojan
+    server: sj-trojan.aliz.work
+    port: 3443
+    password: 9448new
+    alpn:
+      - h2
+      - http/1.1
+  - name: jp-trojan
+    type: trojan
+    server: jp-trojan.aliz.work
+    port: 3443
+    password: 9448new
+    alpn:
+      - h2
+      - http/1.1
+  - name: jp1-trojan
+    type: trojan
+    server: jp1-trojan.aliz.work
+    port: 3443
+    password: 9448new
+    alpn:
+      - h2
+      - http/1.1
+  - name: kr-trojan
+    type: trojan
+    server: kr-trojan.aliz.work
+    port: 3443
+    password: 9448new
+    alpn:
+      - h2
+      - http/1.1
   - name: la-hyse
     type: hysteria
     server: 198.211.24.188
@@ -118,30 +140,6 @@ proxies:
     obfs: "monkeyking"
     protocol: udp
     sni: la.aliz.work
-    up-speed: 30
-    down-speed: 200
-    alpn:
-      - h3
-  - name: sj1-hyse
-    type: hysteria
-    server: 171.22.130.57
-    port: 6446
-    auth-str: "9448new"
-    obfs: "monkey king is sunwukong"
-    protocol: udp
-    sni: sj1.aliz.work
-    up-speed: 30
-    down-speed: 200
-    alpn:
-      - h3
-  - name: jp2-hyse
-    type: hysteria
-    server: 38.207.136.12
-    port: 6445
-    auth-str: "9448new"
-    obfs: "monkeyking"
-    protocol: udp
-    sni: jp2-trojan.aliz.work
     up-speed: 30
     down-speed: 200
     alpn:
@@ -168,39 +166,9 @@ proxies:
     version: 5
     alpn:
       - h3
-  - name: sj1-tic
-    type: tuic
-    server: sj1.aliz.work
-    port: 7443
-    token: ""
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    version: 5
-    alpn:
-      - h3
   - name: jp1-tic
     type: tuic
     server: jp1.aliz.work
-    port: 7443
-    token: ""
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    version: 5
-    alpn:
-      - h3
-  - name: jp2-tic
-    type: tuic
-    server: jp2.aliz.work
-    port: 7443
-    token: ""
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    version: 5
-    alpn:
-      - h3
-  - name: la5-tic
-    type: tuic
-    server: sj818.252798.xyz
     port: 7443
     token: ""
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
@@ -238,16 +206,15 @@ proxy-groups:
       - sj
       - jp
       - jp1
-      - jp2
+      - sj-trojan
+      - jp-trojan
+      - jp1-trojan
+      - kr-trojan
       - la-tic
-      - sj1-tic
       - jp1-tic
       - kr-tic
-      - la5-tic
       - us-tic
       - la-hyse
-      - sj1-hyse
-      - jp2-hyse
       - us-hyse
 
 rule-providers:
