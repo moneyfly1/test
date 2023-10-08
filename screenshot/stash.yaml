@@ -143,11 +143,11 @@ proxies:
   - name: la-hyse
     type: hysteria
     server: 198.211.24.188
-    port: 6442
+    port: 6443
     auth-str: "9448new"
     obfs: "monkeyking"
     protocol: udp
-    sni: la.aliz.work
+    sni: la-trojan.aliz.work
     up-speed: 30
     down-speed: 200
     alpn:
@@ -155,9 +155,9 @@ proxies:
   - name: us-hyse
     type: hysteria
     server: 104.36.85.36
-    port: 6446
+    port: 6443
     auth-str: "9448new"
-    obfs: "monkey king is sunwukong"
+    obfs: "monkeyking"
     protocol: udp
     sni: us-trojan.aliz.work
     up-speed: 30
