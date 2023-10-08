@@ -82,7 +82,7 @@ proxies:
       grpc-service-name: "sing-box"
   - name: hka
     type: vless
-    server: hka-vless.aliz.work
+    server: hk-vless.aliz.work
     port: 443
     skip-cert-verify: true
     uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
