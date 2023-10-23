@@ -41,7 +41,7 @@
     {
       "type": "trojan",
       "tag": "trojan-out",
-      "server": "198.211.24.188",
+      "server": "142.171.184.253",
       "server_port": 443,
       "password": "9448new",
       "network": "tcp",
