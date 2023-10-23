@@ -335,20 +335,6 @@ proxies:
     reduce-rtt: true
     request-timeout: 8000
     fast-open: true
-  - name: hkb-tuic
-    server: 149.88.67.165
-    port: 9443
-    type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
-    alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
-    request-timeout: 8000
-    fast-open: true
   - name: la-hyse
     type: hysteria2
     server: 198.211.24.188
@@ -371,7 +357,7 @@ proxies:
     obfs: salamander
     obfs-password: fuckme
     protocol: udp
-    sni: us-trojan.aliz.work
+    sni: us.aliz.work
     up: "50 Mbps"
     down: "150 Mbps"
     alpn:
@@ -386,20 +372,6 @@ proxies:
     obfs-password: fuckme
     protocol: udp
     sni: sj818.252798.xyz
-    up: "50 Mbps"
-    down: "150 Mbps"
-    alpn:
-      - h3
-    fast-open: true
-  - name: hkb-hyse
-    type: hysteria2
-    server: 149.88.67.165
-    port: 8442
-    password: "9448new"
-    obfs: salamander
-    obfs-password: fuckme
-    protocol: udp
-    sni: hkb-trojan.aliz.work
     up: "50 Mbps"
     down: "150 Mbps"
     alpn:
