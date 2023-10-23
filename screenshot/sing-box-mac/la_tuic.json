@@ -41,7 +41,7 @@
     {
       "type": "tuic",
       "tag": "tuic-out",
-      "server": "198.211.24.188",
+      "server": "142.171.184.253",
       "server_port": 9443,
       "password": "foobar",
       "uuid": "37d59edb-6e4f-43ff-a439-ee87f0216de8",
