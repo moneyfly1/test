@@ -91,7 +91,7 @@ proxies:
     client-fingerprint: chrome
   - name: la-grpc-vision
     type: vless
-    server: 198.211.24.188
+    server: 142.171.184.253
     port: 443
     skip-cert-verify: true
     uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
@@ -217,7 +217,7 @@ proxies:
       client-fingerprint: chrome
   - name: la-shadowtls
     type: ss
-    server: 198.211.24.188
+    server: 142.171.184.253
     port: 443
     cipher: 2022-blake3-aes-128-gcm
     password: rObhdH4a89qzQa8oAgMycQ==
@@ -337,7 +337,7 @@ proxies:
     fast-open: true
   - name: la-hyse
     type: hysteria2
-    server: 198.211.24.188
+    server: 142.171.184.253
     port: 8441
     password: "9448new"
     obfs: salamander
@@ -352,7 +352,7 @@ proxies:
   - name: us-hyse
     type: hysteria2
     server: 104.36.85.36
-    port: 8442
+    port: 8441
     password: "9448new"
     obfs: salamander
     obfs-password: fuckme
