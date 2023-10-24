@@ -280,7 +280,7 @@ proxies:
     request-timeout: 8000
     fast-open: true
   - name: la-tuic
-    server: la.aliz.work
+    server: 142.171.184.253
     port: 9443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
