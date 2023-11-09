@@ -141,15 +141,15 @@ proxies:
       - h2
       - http/1.1
   - name: la-hyse
-    type: hysteria
+    type: hysteria2
     server: 142.171.184.253
-    port: 6443
-    auth-str: "9448new"
-    obfs: "monkeyking"
+    port: 8443
+    auth: "9448new"
+    fast-open: true
     protocol: udp
-    sni: la-trojan.aliz.work
-    up-speed: 30
-    down-speed: 200
+    sni: la.aliz.work
+    up-speed: 50
+    down-speed: 100
     alpn:
       - h3
   - name: us-hyse
