@@ -146,12 +146,10 @@ proxies:
     port: 8443
     auth: "9448new"
     fast-open: true
-    protocol: udp
+    skip-cert-verify: true
     sni: la.aliz.work
     up-speed: 50
     down-speed: 100
-    alpn:
-      - h3
   - name: us-hyse
     type: hysteria
     server: 104.36.85.36
