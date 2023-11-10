@@ -309,7 +309,7 @@ proxies:
     fast-open: true
   - name: jp1-tuic
     server: jp1.aliz.work
-    port: 7443
+    port: 2443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
     password: foobar
