@@ -143,7 +143,7 @@ proxies:
   - name: la-hyse
     type: hysteria2
     server: 142.171.184.253
-    port: 8443
+    port: 16443
     auth: "9448new"
     fast-open: true
     skip-cert-verify: true
