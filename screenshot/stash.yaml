@@ -151,17 +151,15 @@ proxies:
     up-speed: 50
     down-speed: 100
   - name: us-hyse
-    type: hysteria
+    type: hysteria2
     server: 104.36.85.36
-    port: 6443
-    auth-str: "9448new"
-    obfs: "monkeyking"
-    protocol: udp
-    sni: us-trojan.aliz.work
-    up-speed: 30
-    down-speed: 200
-    alpn:
-      - h3
+    port: 16443
+    auth: "9448new"
+    fast-open: true
+    skip-cert-verify: true
+    sni: us.aliz.work
+    up-speed: 50
+    down-speed: 100
   - name: la-tic
     type: tuic
     server: la.aliz.work
