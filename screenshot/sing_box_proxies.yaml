@@ -371,7 +371,7 @@ proxies:
     obfs: salamander
     obfs-password: fuckme
     protocol: udp
-    sni: sj818.252798.xyz
+    sni: la5.aliz.work
     up: "50 Mbps"
     down: "150 Mbps"
     alpn:
