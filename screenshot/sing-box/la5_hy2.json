@@ -60,7 +60,7 @@
       "network": "tcp",
       "tls": {
         "enabled": true,
-        "server_name": "sj818.252798.xyz",
+        "server_name": "la5.aliz.work",
         "alpn": ["h3"],
         "insecure": false,
         "disable_sni": true
