@@ -48,7 +48,7 @@
       "down_mbps": 300,
       "obfs": {
         "type": "salamander",
-        "password": "fuck util"
+        "password": "fuckme"
       },
       "network": "tcp",
       "tls": {
