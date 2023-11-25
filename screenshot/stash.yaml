@@ -150,6 +150,16 @@ proxies:
     sni: la.aliz.work
     up-speed: 50
     down-speed: 100
+  - name: la2-hyse
+    type: hysteria2
+    server: 148.135.111.212
+    port: 9443
+    auth: "9448new"
+    fast-open: true
+    skip-cert-verify: true
+    sni: la2.aliz.work
+    up-speed: 50
+    down-speed: 100
   - name: us-hyse
     type: hysteria2
     server: 104.36.85.36
@@ -219,6 +229,7 @@ proxy-groups:
       - jp1-tic
       - kr-tic
       - us-tic
+      - la2-hyse
       - la-hyse
       - us-hyse
 
