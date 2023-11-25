@@ -180,6 +180,16 @@ proxies:
     version: 5
     alpn:
       - h3
+  - name: la2-tic
+    type: tuic
+    server: la2.aliz.work
+    port: 7443
+    token: ""
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    version: 5
+    alpn:
+      - h3
   - name: jp1-tic
     type: tuic
     server: jp1.aliz.work
@@ -226,6 +236,7 @@ proxy-groups:
       - kr-trojan
       - hk-trojan
       - la-tic
+      - la2-tic
       - jp1-tic
       - kr-tic
       - us-tic
