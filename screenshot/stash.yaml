@@ -132,6 +132,14 @@ proxies:
     alpn:
       - h2
       - http/1.1
+  - name: la2-trojan
+    type: trojan
+    server: la2-trojan.aliz.work
+    port: 443
+    password: 9448new
+    alpn:
+      - h2
+      - http/1.1
   - name: hk-trojan
     type: trojan
     server: hk-trojan.aliz.work
@@ -235,6 +243,7 @@ proxy-groups:
       - jp1-trojan
       - kr-trojan
       - hk-trojan
+      - la2-trojan
       - la-tic
       - la2-tic
       - jp1-tic
