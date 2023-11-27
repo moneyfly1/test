@@ -416,12 +416,12 @@ proxies:
   - name: la1-hyse
     type: hysteria2
     server: 74.48.145.119
-    port: 8443
+    port: 8445
     password: "9448new"
     obfs: salamander
     obfs-password: fuckme
     protocol: udp
-    sni: la2.aliz.work
+    sni: la1.aliz.work
     up: "50 Mbps"
     down: "150 Mbps"
     alpn:
