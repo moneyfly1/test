@@ -15,10 +15,7 @@
     "servers": [
       {
         "tag": "dns_proxy",
-        "address": "https://1.1.1.1/dns-query",
-        "address_resolver": "dns_resolver",
-        "strategy": "ipv4_only",
-        "detour": "select"
+        "address": "https://1.1.1.1/dns-query"
       },
       {
         "tag": "dns_direct",
