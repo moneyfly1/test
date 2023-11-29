@@ -430,7 +430,7 @@ proxies:
   - name: la2-hyse
     type: hysteria2
     server: 148.135.111.212
-    port: 8443
+    port: 8445
     password: "9448new"
     obfs: salamander
     obfs-password: fuckme
