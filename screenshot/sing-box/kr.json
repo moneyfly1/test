@@ -260,7 +260,7 @@
       "congestion_control": "bbr",
       "tls": {
         "enabled": true,
-        "server_name": "jp1.aliz.work",
+        "server_name": "kr-trojan.aliz.work",
         "alpn": [
           "h3"
         ]
