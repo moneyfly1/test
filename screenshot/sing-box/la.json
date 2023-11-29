@@ -165,6 +165,7 @@
       "outbounds": [
         "shadowsocks-out",
         "trojan-out",
+        "hy-out",
         "vless-out",
         "tuic-out"
       ],
