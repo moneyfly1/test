@@ -305,6 +305,10 @@
         "outbound": "direct"
       },
       {
+        "geosite": "category-ads-all",
+        "outbound": "block"
+      },
+      {
         "geosite": [
           "google",
           "youtube"
