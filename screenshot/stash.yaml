@@ -148,6 +148,14 @@ proxies:
     alpn:
       - h2
       - http/1.1
+  - name: la3-trojan
+    type: trojan
+    server: la3-trojan.aliz.work
+    port: 443
+    password: 9448new
+    alpn:
+      - h2
+      - http/1.1
   - name: hk-trojan
     type: trojan
     server: hk-trojan.aliz.work
@@ -219,6 +227,16 @@ proxies:
   - name: la2-tic
     type: tuic
     server: la2.aliz.work
+    port: 7443
+    token: ""
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    version: 5
+    alpn:
+      - h3
+  - name: la3-tic
+    type: tuic
+    server: la3.aliz.work
     port: 7443
     token: ""
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
