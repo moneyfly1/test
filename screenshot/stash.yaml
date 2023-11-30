@@ -291,9 +291,11 @@ proxy-groups:
       - hk-trojan
       - la1-trojan
       - la2-trojan
+      - la3-trojan
       - la-tic
       - la1-tic
       - la2-tic
+      - la3-tic
       - jp1-tic
       - kr-tic
       - us-tic
