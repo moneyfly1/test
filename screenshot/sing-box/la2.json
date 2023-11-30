@@ -325,6 +325,19 @@
           "private"
         ],
         "outbound": "direct"
+      },
+      {
+        "geosite": [
+          "google",
+          "youtube"
+        ],
+        "geoip": [
+          "google",
+          "telegram",
+          "twitter",
+          "netflix"
+        ],
+        "outbound": "select"
       }
     ],
     "final": "select",
