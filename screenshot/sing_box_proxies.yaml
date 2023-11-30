@@ -435,7 +435,7 @@ proxies:
     reduce-rtt: true
     request-timeout: 8000
     fast-open: true
-  - name: la2-tuic
+  - name: la3-tuic
     server: la3.aliz.work
     port: 7443
     type: tuic
