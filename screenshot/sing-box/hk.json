@@ -118,7 +118,7 @@
       "password": "9448new",
       "tls": {
         "enabled": true,
-        "server_name": "hk-trojan.aliz.work",
+        "server_name": "hk.252798.xyz",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -127,10 +127,14 @@
       },
       "multiplex": {
         "enabled": true,
-        "protocol": "h2mux",
+        "protocol": "smux",
         "max_connections": 4,
         "min_streams": 4,
         "padding": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "hk-trojan"
       }
     },
     {
@@ -145,7 +149,7 @@
       },
       "multiplex": {
         "enabled": true,
-        "protocol": "h2mux",
+        "protocol": "smux",
         "max_connections": 4,
         "min_streams": 4,
         "padding": true
@@ -188,9 +192,16 @@
         }
       },
       "packet_encoding": "xudp",
+        "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_connections": 4,
+        "min_streams": 4,
+        "padding": true
+      },
       "transport": {
         "type": "grpc",
-        "service_name": "sing-box"
+        "service_name": "hk-vless"
       }
     },
     {
