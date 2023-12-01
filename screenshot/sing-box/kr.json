@@ -17,8 +17,7 @@
         "tag": "dns_proxy",
         "address": "https://1.1.1.1/dns-query",
         "address_resolver": "dns_resolver",
-        "strategy": "ipv4_only",
-        "detour": "select"
+        "strategy": "ipv4_only"
       },
       {
         "tag": "dns_direct",
@@ -106,7 +105,8 @@
       "outbounds": [
         "shadowsocks-out",
         "trojan-out",
-        "vless-out"
+        "vless-out",
+         "tuic-out"
       ],
       "default": "shadowsocks-out"
     },
