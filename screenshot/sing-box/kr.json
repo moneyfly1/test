@@ -106,8 +106,7 @@
       "outbounds": [
         "shadowsocks-out",
         "trojan-out",
-        "vless-out",
-        "tuic-out"
+        "vless-out"
       ],
       "default": "shadowsocks-out"
     },
