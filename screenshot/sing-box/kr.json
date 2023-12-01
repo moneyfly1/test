@@ -15,7 +15,10 @@
     "servers": [
       {
         "tag": "dns_proxy",
-        "address": "8.8.8.8"
+        "address": "https://1.1.1.1/dns-query",
+        "address_resolver": "dns_resolver",
+        "strategy": "ipv4_only",
+        "detour": "select"
       },
       {
         "tag": "dns_direct",
@@ -147,7 +150,7 @@
       },
       "multiplex": {
         "enabled": true,
-        "protocol": "h2mux",
+        "protocol": "smux",
         "max_connections": 4,
         "min_streams": 4,
         "padding": true
