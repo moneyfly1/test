@@ -1,0 +1,8 @@
+theme = "onedark"
+
+[editor]
+idle-timeout = 10
+completion-trigger-len = 1
+
+[editor.file-picker]
+hidden = false
