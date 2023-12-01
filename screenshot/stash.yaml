@@ -132,6 +132,8 @@ proxies:
     alpn:
       - h2
       - http/1.1
+    grpc-opts:
+      grpc-service-name: "kr-trojan"
   - name: la1-trojan
     type: trojan
     server: la1-trojan.aliz.work
@@ -164,6 +166,8 @@ proxies:
     alpn:
       - h2
       - http/1.1
+    grpc-opts:
+      grpc-service-name: "hk-trojan"
   - name: la-hyse
     type: hysteria2
     server: 142.171.184.253
