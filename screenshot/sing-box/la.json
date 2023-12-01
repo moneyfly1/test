@@ -105,9 +105,9 @@
       "outbounds": [
         "shadowsocks-out",
         "trojan-out",
-        "hy-out",
         "vless-out",
-        "tuic-out"
+        "tuic-out",
+        "hy-out"
       ],
       "default": "shadowsocks-out"
     },
@@ -119,7 +119,7 @@
       "password": "9448new",
       "tls": {
         "enabled": true,
-        "server_name": "la-trojan.aliz.work",
+        "server_name": "la.aliz.work",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -128,10 +128,14 @@
       },
       "multiplex": {
         "enabled": true,
-        "protocol": "h2mux",
+        "protocol": "smux",
         "max_connections": 4,
         "min_streams": 4,
         "padding": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "la-trojan"
       }
     },
     {
@@ -146,7 +150,7 @@
       },
       "multiplex": {
         "enabled": true,
-        "protocol": "h2mux",
+        "protocol": "smux",
         "max_connections": 4,
         "min_streams": 4,
         "padding": true
@@ -191,7 +195,7 @@
       "packet_encoding": "xudp",
       "transport": {
         "type": "grpc",
-        "service_name": "sing-box"
+        "service_name": "la-vless"
       }
     },
     {
@@ -204,7 +208,7 @@
       "congestion_control": "bbr",
       "tls": {
         "enabled": true,
-        "server_name": "jp1.aliz.work",
+        "server_name": "la.aliz.work",
         "alpn": [
           "h3"
         ]
