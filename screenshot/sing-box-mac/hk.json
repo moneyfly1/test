@@ -15,7 +15,8 @@
     "servers": [
       {
         "tag": "dns_proxy",
-        "address": "8.8.8.8"
+        "address": "8.8.8.8",
+        "detour": "select"
       },
       {
         "tag": "dns_direct",
