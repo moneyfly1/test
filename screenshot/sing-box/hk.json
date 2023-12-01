@@ -114,7 +114,7 @@
       "type": "trojan",
       "tag": "trojan-out",
       "server": "43.154.55.240",
-      "server_port": 443,
+      "server_port": 1443,
       "password": "9448new",
       "tls": {
         "enabled": true,
@@ -124,13 +124,6 @@
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_connections": 4,
-        "min_streams": 4,
-        "padding": true
       },
       "transport": {
         "type": "grpc",
@@ -149,7 +142,7 @@
       },
       "multiplex": {
         "enabled": true,
-        "protocol": "h2mux",
+        "protocol": "smux",
         "max_connections": 4,
         "min_streams": 4,
         "padding": true
