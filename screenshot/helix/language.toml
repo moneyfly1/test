@@ -1,0 +1,73 @@
+[[language]]
+name = "go"
+indent = { tab-width = 2, unit = " " }
+
+[[language]]
+name = "rust"
+
+[language.debugger]
+name = "lldb-vscode"
+transport = "stdio"
+command = "lldb-vscode"
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+completion = [ { name = "binary", completion = "filename" } ]
+args = { program = "{0}", initCommands = [ "command script import /usr/local/etc/lldb_vscode_rustc_primer.py" ] }
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[[language]]
+name = "python"
+roots = ["pyproject.toml"]
+language-servers = ["pyright"]
+
+[language-server.els]
+command = "emmet-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server", "els"]
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server", "els"]
+formatter = { command = 'prettier', args = ["--parser", "typescript", "--no-semi", "--single-quote"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server", "els"]
+formatter = { command = 'prettier', args = ["--parser", "typescript", "--no-semi", "--single-quote"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = 'prettier', args = ["--parser", "typescript", "--no-semi", "--single-quote"] }
+auto-format = true
+
+[[language]]
+name = "javascript"
+formatter = { command = 'prettier', args = ["--parser", "javascript", "--no-semi", "--single-quote"] }
+auto-format = true
+
+[language-server.volar]
+command = "vue-language-server"
+args = ["--stdio"]
+
+[language-server.volar.config.typescript]
+tsdk = "/Users/alichen/.nvm/versions/node/v16.17.0/lib/node_modules/typescript/lib"
+
+[[language]]
+name = "vue"
+file-types = ["vue"]
+language-servers = [{ name = "volar", except-features = ["format"] }]
+scope = "text.html.vue"
+roots = ["package.json"]
+injection-regex = "vue"
+formatter = { command = 'prettier', args = ["--parser", "vue", "--single-quote", "--no-semi","--bracket-same-line"] }
+auto-format = true
