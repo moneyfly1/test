@@ -11,7 +11,7 @@ proxies:
     servername: www.docker.com
     network: grpc
     grpc-opts:
-      grpc-service-name: "sing-box"
+      grpc-service-name: "kr-vless"
       grpc-multi-mode: true
     reality-opts:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
@@ -164,7 +164,7 @@ proxies:
   - name: kr-shadowtls
     type: ss
     server: 193.122.124.191
-    port: 7443
+    port: 5443
     cipher: 2022-blake3-aes-128-gcm
     password: rObhdH4a89qzQa8oAgMycQ==
     smux:
