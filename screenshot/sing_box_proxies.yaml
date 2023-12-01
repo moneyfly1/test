@@ -101,7 +101,7 @@ proxies:
     servername: www.docker.com
     network: grpc
     grpc-opts:
-      grpc-service-name: "sing-box"
+      grpc-service-name: "la-vless"
       grpc-multi-mode: true
     reality-opts:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
@@ -352,7 +352,7 @@ proxies:
     request-timeout: 8000
     fast-open: true
   - name: la-tuic
-    server: 142.171.184.253
+    server: la.aliz.work
     port: 9443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
@@ -395,7 +395,7 @@ proxies:
     fast-open: true
   - name: us-tuic
     server: us.aliz.work
-    port: 9443
+    port: 6443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
     password: foobar
