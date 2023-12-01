@@ -83,7 +83,7 @@ proxies:
     servername: www.docker.com
     network: grpc
     grpc-opts:
-      grpc-service-name: "sing-box"
+      grpc-service-name: "hk-vless"
       grpc-multi-mode: true
     reality-opts:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
