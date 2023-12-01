@@ -119,7 +119,7 @@
       "password": "9448new",
       "tls": {
         "enabled": true,
-        "server_name": "kr-trojan.aliz.work",
+        "server_name": "kr.252798.xyz",
         "insecure": true,
         "utls": {
           "enabled": true,
