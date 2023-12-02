@@ -1,0 +1,308 @@
+{
+   "experimental": {
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "external_ui": "metacubexd",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "select",
+      "secret": "",
+      "default_mode": "rule",
+      "store_selected": true,
+      "cache_file": "cache.db"
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "address": "https://1.1.1.1/dns-query",
+        "address_resolver": "dns_resolver",
+        "strategy": "ipv4_only"
+      },
+      {
+        "tag": "dns_direct",
+        "address": "h3://dns.alidns.com/dns-query",
+        "address_resolver": "dns_resolver",
+        "strategy": "ipv4_only",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns_block",
+        "address": "rcode://refused"
+      },
+      {
+        "tag": "dns_resolver",
+        "address": "223.5.5.5",
+        "strategy": "ipv4_only",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      {
+        "clash_mode": "direct",
+        "server": "dns_direct"
+      },
+      {
+        "clash_mode": "global",
+        "server": "dns_proxy"
+      },
+      {
+        "inbound": [
+          "socks-in"
+        ],
+        "server": "dns_proxy"
+      },
+      {
+        "geosite": [
+          "category-games@cn"
+        ],
+        "server": "dns_direct"
+      },
+      {
+        "geosite": [
+          "geolocation-!cn"
+        ],
+        "server": "dns_proxy"
+      },
+      {
+        "geosite": [
+          "cn"
+        ],
+        "server": "dns_direct"
+      },
+      {
+        "geosite": [
+          "private"
+        ],
+        "server": "dns_direct"
+      },
+      {
+        "geosite": [
+          "google",
+          "youtube"
+        ],
+        "server": "dns_proxy"
+      }
+    ],
+    "final": "dns_direct"
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 1085,
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "shadowsocks-out",
+        "trojan-out",
+        "vless-out",
+        "tuic-out",
+        "hy-out"
+      ],
+      "default": "shadowsocks-out"
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-out",
+      "server": "74.48.145.119",
+      "server_port": 443,
+      "password": "9448new",
+      "tls": {
+        "enabled": true,
+        "server_name": "la1.aliz.work",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_connections": 4,
+        "min_streams": 4,
+        "padding": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "la-trojan"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-out",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "rObhdH4a89qzQa8oAgMycQ==",
+      "detour": "shadowtls-out",
+      "udp_over_tcp": {
+        "enabled": false,
+        "version": 2
+      },
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_connections": 4,
+        "min_streams": 4,
+        "padding": true
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "shadowtls-out",
+      "server": "74.48.145.119",
+      "server_port": 443,
+      "version": 3,
+      "password": "rObhdH4a89qzQa8oAgMycQ==",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-out",
+      "server": "74.48.145.119",
+      "server_port": 443,
+      "uuid": "8ed8efb7-457e-4f8f-a903-713fe04ad1c2",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.docker.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU",
+          "short_id": "5d2e3ed92cf8a73b"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "la-vless"
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "tuic-out",
+      "server": "74.48.145.119",
+      "server_port": 6443,
+      "uuid": "37d59edb-6e4f-43ff-a439-ee87f0216de8",
+      "password": "foobar",
+      "congestion_control": "bbr",
+      "tls": {
+        "enabled": true,
+        "server_name": "la1.aliz.work",
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hy-out",
+      "server": "74.48.145.119",
+      "server_port": 8442,
+      "password": "9448new",
+      "up_mbps": 50,
+      "down_mbps": 300,
+      "obfs": {
+        "type": "salamander",
+        "password": "fuckme"
+      },
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "la1.aliz.work",
+        "alpn": ["h3"],
+        "insecure": false,
+        "disable_sni": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "geoip": {
+      "path": "geoip.db",
+      "download_url": "https://raw.githubusercontent.com/CHIZI-0618/v2ray-rules-dat/release/geoip.db",
+      "download_detour": "select"
+    },
+    "geosite": {
+      "path": "geosite.db",
+      "download_url": "https://github.com/yangchuansheng/sing-geosite/releases/latest/download/geosite.db",
+      "download_detour": "select"
+    },
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "geosite": [
+          "private",
+          "cn",
+          "category-games@cn"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geoip": [
+          "cn",
+          "private"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geosite": [
+          "google",
+          "youtube",
+          "geolocation-!cn"
+        ],
+        "geoip": [
+          "google",
+          "telegram",
+          "twitter",
+          "netflix"
+        ],
+        "outbound": "select"
+      },
+      {
+        "geosite": "category-ads-all",
+        "outbound": "block"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "ntp": {
+    "enabled": true,
+    "server": "time.apple.com",
+    "server_port": 123,
+    "interval": "30m",
+    "detour": "direct"
+  }
+}
