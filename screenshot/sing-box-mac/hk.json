@@ -222,60 +222,10 @@
         "outbound": "dns-out"
       },
       {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "geosite": [
-              "category-games@cn"
-            ]
-          },
-          {
-            "geoip": [
-              "cn"
-            ]
-          }
-        ],
-        "outbound": "direct"
-      },
-      {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "geosite": [
-              "geolocation-!cn"
-            ]
-          },
-          {
-            "geoip": [
-              "cn"
-            ],
-            "invert": true
-          }
-        ],
-        "outbound": "select"
-      },
-      {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "geosite": [
-              "cn"
-            ]
-          },
-          {
-            "geoip": [
-              "cn"
-            ]
-          }
-        ],
-        "outbound": "direct"
-      },
-      {
         "geosite": [
-          "private"
+          "private",
+          "cn",
+          "category-games@cn"
         ],
         "outbound": "direct"
       },
@@ -289,7 +239,8 @@
       {
         "geosite": [
           "google",
-          "youtube"
+          "youtube",
+          "geolocation-!cn"
         ],
         "geoip": [
           "google",
@@ -298,6 +249,10 @@
           "netflix"
         ],
         "outbound": "select"
+      },
+      {
+        "geosite": "category-ads-all",
+        "outbound": "block"
       }
     ],
     "final": "select",
