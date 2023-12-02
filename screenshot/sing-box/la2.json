@@ -119,7 +119,7 @@
       "password": "9448new",
       "tls": {
         "enabled": true,
-        "server_name": "la2-trojan.aliz.work",
+        "server_name": "la2.aliz.work",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -128,10 +128,14 @@
       },
       "multiplex": {
         "enabled": true,
-        "protocol": "h2mux",
+        "protocol": "smux",
         "max_connections": 4,
         "min_streams": 4,
         "padding": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "la-trojan"
       }
     },
     {
@@ -146,7 +150,7 @@
       },
       "multiplex": {
         "enabled": true,
-        "protocol": "h2mux",
+        "protocol": "smux",
         "max_connections": 4,
         "min_streams": 4,
         "padding": true
@@ -191,14 +195,14 @@
       "packet_encoding": "xudp",
       "transport": {
         "type": "grpc",
-        "service_name": "sing-box"
+        "service_name": "la-vless"
       }
     },
     {
       "type": "tuic",
       "tag": "tuic-out",
       "server": "148.135.111.212",
-      "server_port": 7443,
+      "server_port": 9443,
       "uuid": "37d59edb-6e4f-43ff-a439-ee87f0216de8",
       "password": "foobar",
       "congestion_control": "bbr",
@@ -214,7 +218,7 @@
       "type": "hysteria2",
       "tag": "hy-out",
       "server": "148.135.111.212",
-      "server_port": 8445,
+      "server_port": 8442,
       "password": "9448new",
       "up_mbps": 50,
       "down_mbps": 300,
