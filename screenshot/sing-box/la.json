@@ -107,7 +107,7 @@
         "trojan-out",
         "vless-out",
         "tuic-out",
-        "hy-out"
+         "hy-out"
       ],
       "default": "shadowsocks-out"
     },
