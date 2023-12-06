@@ -205,7 +205,7 @@
       "type": "tuic",
       "tag": "tuic-out",
       "server": "38.147.188.147",
-      "server_port": 9443,
+      "server_port": 7443,
       "uuid": "37d59edb-6e4f-43ff-a439-ee87f0216de8",
       "password": "foobar",
       "congestion_control": "bbr",
