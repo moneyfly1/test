@@ -106,15 +106,14 @@
         "shadowsocks-out",
         "trojan-out",
         "vless-out",
-        "tuic-out",
-        "hy-out"
+        "tuic-out"
       ],
       "default": "shadowsocks-out"
     },
     {
       "type": "trojan",
       "tag": "trojan-out",
-      "server": "38.147.188.14",
+      "server": "38.147.188.147",
       "server_port": 443,
       "password": "9448new",
       "tls": {
@@ -159,7 +158,7 @@
     {
       "type": "shadowtls",
       "tag": "shadowtls-out",
-      "server": "38.147.188.14",
+      "server": "38.147.188.147",
       "server_port": 443,
       "version": 3,
       "password": "rObhdH4a89qzQa8oAgMycQ==",
@@ -175,7 +174,7 @@
     {
       "type": "vless",
       "tag": "vless-out",
-      "server": "38.147.188.14",
+      "server": "38.147.188.147",
       "server_port": 443,
       "uuid": "8ed8efb7-457e-4f8f-a903-713fe04ad1c2",
       "flow": "",
@@ -208,7 +207,7 @@
     {
       "type": "tuic",
       "tag": "tuic-out",
-      "server": "38.147.188.14",
+      "server": "38.147.188.147",
       "server_port": 7443,
       "uuid": "37d59edb-6e4f-43ff-a439-ee87f0216de8",
       "password": "foobar",
@@ -219,27 +218,6 @@
         "alpn": [
           "h3"
         ]
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "hy-out",
-      "server": "38.147.188.14",
-      "server_port": 8442,
-      "password": "9448new",
-      "up_mbps": 50,
-      "down_mbps": 300,
-      "obfs": {
-        "type": "salamander",
-        "password": "fuckme"
-      },
-      "network": "tcp",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.aliz.work",
-        "alpn": ["h3"],
-        "insecure": false,
-        "disable_sni": true
       }
     },
     {
