@@ -385,3 +385,80 @@ proxies:
       password: rObhdH4a89qzQa8oAgMycQ==
       version: 3
       client-fingerprint: chrome
+  - name: jp1-trojan
+    type: trojan
+    server: jp1-trojan.aliz.work
+    port: 3443
+    password: "9448new"
+    alpn:
+      - h2
+  - name: sj-trojan
+    type: trojan
+    server: sj-trojan.aliz.work
+    port: 3443
+    password: "9448new"
+    alpn:
+      - h2
+  - name: kr-trojan
+    server: kr.aliz.work
+    port: 443
+    type: trojan
+    password: "9448new"
+    network: grpc
+    # skip-cert-verify: true
+    # fingerprint: xxxx
+    udp: true
+    grpc-opts:
+      grpc-service-name: "kr-trojan"
+  - name: la-trojan
+    server: la.aliz.work
+    port: 443
+    type: trojan
+    password: "9448new"
+    network: grpc
+    # skip-cert-verify: true
+    # fingerprint: xxxx
+    udp: true
+    grpc-opts:
+      grpc-service-name: "la-trojan"
+  - name: la1-trojan
+    server: la1.aliz.work
+    port: 443
+    type: trojan
+    password: "9448new"
+    network: grpc
+    # skip-cert-verify: true
+    # fingerprint: xxxx
+    udp: true
+    grpc-opts:
+      grpc-service-name: "la-trojan"
+  - name: la2-trojan
+    server: la2.aliz.work
+    port: 443
+    type: trojan
+    password: "9448new"
+    network: grpc
+    # skip-cert-verify: true
+    # fingerprint: xxxx
+    udp: true
+    grpc-opts:
+      grpc-service-name: "la-trojan"
+  - name: la3-trojan
+    type: trojan
+    server: la3-trojan.aliz.work
+    port: 443
+    password: "9448new"
+    alpn:
+      - h2
+  - name: us-trojan
+    server: us.aliz.work
+    port: 443
+    type: trojan
+    password: "9448new"
+    network: grpc
+    # skip-cert-verify: true
+    # fingerprint: xxxx
+    udp: true
+    grpc-opts:
+      grpc-service-name: "us-trojan"
+
