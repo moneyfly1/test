@@ -49,21 +49,11 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300  
-  udp_proxies:
-    type: http
-    path: ./udp_proxies.yaml
-    url: https://raw.githubusercontent.com/ali322/OSCN/master/screenshot/udp_proxies.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
 proxy-groups:
   - name: "PROXY"
     type: select
     use:
       - tcp_proxies
-      - udp_proxies
 rule-providers:
   reject:
     type: http
