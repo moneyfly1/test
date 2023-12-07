@@ -1,0 +1,197 @@
+proxies:
+  - name: sj-tuic
+    server: sj-trojan.aliz.work
+    port: 9443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: jp-tuic
+    server: jp-trojan.aliz.work
+    port: 9443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: la-tuic
+    server: la.aliz.work
+    port: 9443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: hk-tuic
+    server: hk.aliz.work
+    port: 9443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: kr-tuic
+    server: kr.aliz.work
+    port: 6443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: jp1-tuic
+    server: jp1.aliz.work
+    port: 2443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: us-tuic
+    server: us.aliz.work
+    port: 6443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: la1-tuic
+    server: la1.aliz.work
+    port: 7443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: la2-tuic
+    server: la2.aliz.work
+    port: 7443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: la3-tuic
+    server: la3.aliz.work
+    port: 7443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: la-hyse
+    type: hysteria2
+    server: 142.171.184.253
+    port: 8445
+    password: "9448new"
+    obfs: salamander
+    obfs-password: fuckme
+    protocol: udp
+    sni: la.aliz.work
+    up: "50 Mbps"
+    down: "150 Mbps"
+    alpn:
+      - h3
+    fast-open: true
+  - name: la1-hyse
+    type: hysteria2
+    server: 74.48.145.119
+    port: 8445
+    password: "9448new"
+    obfs: salamander
+    obfs-password: fuckme
+    protocol: udp
+    sni: la1.aliz.work
+    up: "50 Mbps"
+    down: "150 Mbps"
+    alpn:
+      - h3
+    fast-open: true
+  - name: la2-hyse
+    type: hysteria2
+    server: 148.135.111.212
+    port: 8445
+    password: "9448new"
+    obfs: salamander
+    obfs-password: fuckme
+    protocol: udp
+    sni: la2.aliz.work
+    up: "50 Mbps"
+    down: "150 Mbps"
+    alpn:
+      - h3
+    fast-open: true
+  - name: us-hyse
+    type: hysteria2
+    server: 104.36.85.36
+    port: 8446
+    password: "9448new"
+    obfs: salamander
+    obfs-password: "fuckme"
+    protocol: udp
+    sni: us.aliz.work
+    up: "50 Mbps"
+    down: "150 Mbps"
+    alpn:
+      - h3
+    fast-open: true
