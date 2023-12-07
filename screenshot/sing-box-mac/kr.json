@@ -110,7 +110,7 @@
     {
       "type": "trojan",
       "tag": "trojan-out",
-      "server": "152.70.36.19",
+      "server": "152.70.36.195",
       "server_port": 443,
       "password": "9448new",
       "tls": {
@@ -155,7 +155,7 @@
     {
       "type": "shadowtls",
       "tag": "shadowtls-out",
-      "server": "152.70.36.19",
+      "server": "152.70.36.195",
       "server_port": 443,
       "version": 3,
       "password": "rObhdH4a89qzQa8oAgMycQ==",
@@ -171,7 +171,7 @@
     {
       "type": "vless",
       "tag": "vless-out",
-      "server": "152.70.36.19",
+      "server": "152.70.36.195",
       "server_port": 443,
       "uuid": "8ed8efb7-457e-4f8f-a903-713fe04ad1c2",
       "flow": "",
@@ -204,7 +204,7 @@
     {
       "type": "tuic",
       "tag": "tuic-out",
-      "server": "152.70.36.19",
+      "server": "152.70.36.195",
       "server_port": 6443,
       "uuid": "37d59edb-6e4f-43ff-a439-ee87f0216de8",
       "password": "foobar",
