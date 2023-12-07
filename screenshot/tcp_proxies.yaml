@@ -1,0 +1,387 @@
+proxies:
+  - name: la3-grpc
+    type: vless
+    server: 154.17.5.204
+    port: 3443
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    udp: true
+    flow: 
+    servername: la3.aliz.work
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "x-vless"
+      grpc-multi-mode: true
+  - name: sj-grpc
+    type: vless
+    server: 45.139.193.213
+    port: 443
+    uuid: 6373c273-4a52-4e5d-9ee9-afd23107bdc3
+    tls: true
+    udp: true
+    flow: 
+    servername: sj.252798.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sj.252798.xyz"
+      grpc-multi-mode: true
+  - name: kr-grpc-vision
+    type: vless
+    server: 152.70.36.195
+    port: 443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "kr-vless"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: jp1-grpc-vision
+    type: vless
+    server: 147.78.247.80
+    port: 3443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: jp-grpc-vision
+    type: vless
+    server: 195.245.242.126
+    port: 3443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: sj-grpc-vision
+    type: vless
+    server: 45.139.193.213
+    port: 3443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: hka-grpc-vision
+    type: vless
+    server: 43.154.55.240
+    port: 443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "hk-vless"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: hk-grpc-vision
+    type: vless
+    server: 38.147.188.147
+    port: 443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "hk-vless"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: la-grpc-vision
+    type: vless
+    server: 142.171.184.253
+    port: 443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "la-vless"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: la1-grpc-vision
+    type: vless
+    server: 74.48.145.119
+    port: 443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "la-vless"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: la2-grpc-vision
+    type: vless
+    server: 148.135.111.212
+    port: 443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "la-vless"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: la3-grpc-vision
+    type: vless
+    server: 154.17.5.204
+    port: 443
+    skip-cert-verify: true
+    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
+    tls: true
+    udp: true
+    flow: 
+    servername: www.docker.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "sing-box"
+      grpc-multi-mode: true
+    reality-opts:
+      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
+      short-id: "5d2e3ed92cf8a73b"
+    client-fingerprint: chrome
+  - name: kr-shadowtls
+    type: ss
+    server: 152.70.36.195
+    port: 443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: smux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: sj-shadowtls
+    type: ss
+    server: 45.139.193.213
+    port: 3443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: h2mux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: jp1-shadowtls
+    type: ss
+    server: 147.78.247.80
+    port: 3443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: h2mux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: jp-shadowtls
+    type: ss
+    server: 195.245.242.126
+    port: 3443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: h2mux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: hka-shadowtls
+    type: ss
+    server: 43.154.55.240
+    port: 443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: h2mux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: hk-shadowtls
+    type: ss
+    server: 38.147.188.147
+    port: 443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: smux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: la-shadowtls
+    type: ss
+    server: 142.171.184.253
+    port: 443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: h2mux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: la1-shadowtls
+    type: ss
+    server: 74.48.145.119
+    port: 443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: h2mux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: la2-shadowtls
+    type: ss
+    server: 148.135.111.212
+    port: 443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: h2mux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
+  - name: la3-shadowtls
+    type: ss
+    server: 154.17.5.204
+    port: 443
+    cipher: 2022-blake3-aes-128-gcm
+    password: rObhdH4a89qzQa8oAgMycQ==
+    smux:
+        enabled: false
+        protocol: h2mux
+        max-connections: 4
+        min-streams: 4
+        only-tcp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "addons.mozilla.org"
+      password: rObhdH4a89qzQa8oAgMycQ==
+      version: 3
+      client-fingerprint: chrome
